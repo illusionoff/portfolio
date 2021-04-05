@@ -1,0 +1,5 @@
+testMiniPcSshGit.txt
+test pull PC and push PC commit "test pull PC and push PC "
+test push nout commit "test push nout "
+test commit server gitHub-brauser
+test +1 push nout commit "test 2 push nout 

@@ -1,0 +1,28 @@
+{
+  "name": "siniakoualex",
+  "version": "1.0.0",
+  "description": "portfolio nodejs react postrgesql",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm run start ",
+    "dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "nodejs",
+    "react",
+    "posthresql"
+  ],
+  "author": "Siniakou Alex <siniakoualex@gmail.ru>",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "pg": "^8.5.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
