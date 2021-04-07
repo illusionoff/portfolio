@@ -20,7 +20,8 @@
   "dependencies": {
     "config": "^3.3.6",
     "express": "^4.17.1",
-    "pg": "^8.5.1"
+    "pg": "^8.5.1",
+    "react-scroll": "^1.8.2"
   },
   "devDependencies": {
     "concurrently": "^6.0.0",
