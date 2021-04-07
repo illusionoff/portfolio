@@ -15,61 +15,66 @@ import 'materialize-css';
 function App() {
   return (
     <>
-      <Navbar />
+
       <main>
+
         {/* <Router> */}
-
-        {/* <Navbar /> */}
-
-        <section id="intro">
-          <div className="container">
-            <Intro />
-          </div >
+        <section id="navbar">
+          <Navbar />
         </section >
 
-        <section id="Contact">
-          <div className="container">
-            <Contact />
-          </div >
-        </section >
+        <div className="content">
 
-        <section id="About">
-          <div className="container">
-            <About />
-          </div >
-        </section >
+          <section id="intro">
+            <div className="container">
+              <Intro />
+            </div >
+          </section >
 
-        <section id="Expirience">
-          <div className="container">
-            <Expirience />
-          </div >
-        </section >
+          <section id="Contact">
+            <div className="container">
+              <Contact />
+            </div >
+          </section >
 
-        <section id="Skills">
-          <div className="container">
-            <Skills />
-          </div >
-        </section >
+          <section id="About">
+            <div className="container">
+              <About />
+            </div >
+          </section >
 
-        <section id="Education">
-          <div className="container">
-            <Education />
-          </div >
-        </section >
+          <section id="Expirience">
+            <div className="container">
+              <Expirience />
+            </div >
+          </section >
 
-        <section id="Resume">
-          <div className="container">
-            <Resume />
-          </div >
-        </section >
+          <section id="Skills">
+            <div className="container">
+              <Skills />
+            </div >
+          </section >
 
-        <section id="WriteMe">
-          <div className="container">
-            <WriteMe />
-          </div >
-        </section >
+          <section id="Education">
+            <div className="container">
+              <Education />
+            </div >
+          </section >
 
-        {/* </Router> */}
+          <section id="Resume">
+            <div className="container">
+              <Resume />
+            </div >
+          </section >
+
+          <section id="WriteMe">
+            <div className="container">
+              <WriteMe />
+            </div >
+          </section >
+
+          {/* </Router> */}
+        </div>
       </main>
     </>
   );
