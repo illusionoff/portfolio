@@ -2,10 +2,11 @@ import React from 'react';
 
 
 
-export const About = () => {
+export const Skills = () => {
     return (
         <div>
-            <h1>About</h1>
+            <h1>Skills</h1>
+
             Что-то
             <br />
             Что-то

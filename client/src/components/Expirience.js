@@ -2,10 +2,10 @@ import React from 'react';
 
 
 
-export const About = () => {
+export const Expirience = () => {
     return (
         <div>
-            <h1>About</h1>
+            <h1>Expirience</h1>
             Что-то
             <br />
             Что-то
