@@ -7,7 +7,7 @@ import M from 'materialize-css/dist/js/materialize.min.js';
 
 
 export const Navbar = () => {
-    // class Navbar extends Component {
+    // className Navbar extends Component {
 
     useEffect(() => {
         // M.AutoInit();
@@ -40,9 +40,9 @@ export const Navbar = () => {
     // render() {
     return (
         <>
-            <div class="navbar-fixed">
+            <div className="navbar-fixed">
                 <nav>
-                    <div className="nav-wrapper blue darken-1" style={{ padding: '0 2rem' }}>
+                    <div className="nav-wrapper cyan darken-1" style={{ padding: '0 2rem' }}>
                         <a href="#" className="brand-logo">Siniakou Alex</a>
                         <a href="#" data-target="slide-out" className="sidenav-trigger"><i className="material-icons">menu</i></a>
                         {/* <li><a href="#" data-target="slide-out" className="sidenav-trigger"><i className="material-icons">menu</i></a></li> */}
@@ -63,20 +63,27 @@ export const Navbar = () => {
 
 
 
-
             <ul id="slide-out-left-fixed" className="sidenav sidenav-fixed">
-                <li><Link activeClass="active" className="test0" to="navbar" spy={true} smooth={true} duration={500}>На верх</Link></li>
-                {/* onClick={() => scroll.scrollToTop()} */}
-                <li><Link activeClass="active" className="test1" to="intro" spy={true} smooth={true} duration={500} offset={-64} >Введение</Link></li>
-                <li><Link activeClass="active" className="test2" to="Contact" spy={true} smooth={true} duration={500} offset={-64}>Контакты</Link></li>
-                <li><Link activeClass="active" className="test3" to="About" spy={true} smooth={true} duration={500} offset={-64}>Обо мне</Link></li>
-                <li><Link activeClass="active" className="test4" to="Expirience" spy={true} smooth={true} duration={500} offset={-64}>Опыт</Link></li>
-                <li><Link activeClass="active" className="test5" to="Skills" spy={true} smooth={true} duration={500} offset={-64}>Навыки и умения</Link></li>
-                <li><Link activeClass="active" className="test6" to="Education" spy={true} smooth={true} duration={500} offset={-64}>Образование</Link></li>
-                <li><Link activeClass="active" className="test7" to="Resume" spy={true} smooth={true} duration={500} offset={-64}>Резюме скачать</Link></li>
-                <li><Link activeClass="active" className="test8" to="WriteMe" spy={true} smooth={true} duration={500} offset={-64}>Напишите мне</Link></li>
-            </ul>
-            {/* <a href="#" data-target="slide-out-left-fixed" class="sidenav-trigger"><i class="material-icons">menu</i></a> */}
+                <li><Link activeClass="active" className="test1" to="intro" spy={true} smooth={true} duration={500} offset={-64} >
+                    <h4>Siniakou Alex</h4>
+                    <span className="brown-text light">Full Stack Developer</span> </Link></li>
+                <li><Link activeClass="active" className="test2" to="Contact" spy={true} smooth={true} duration={500} >
+                    <i className="fas fa-envelope-open fa-fw fa-2x  brown-text text-darken-1" ></i>Контакты</Link></li>
+                <li><Link activeClass="active" className="test3" to="About" spy={true} smooth={true} duration={500} >
+                    <i className="fas fa-user fa-fw fa-2x green-text text-lighten-1" ></i>Обо мне</Link></li>
+                <li><Link activeClass="active" className="test4 " to="Expirience" spy={true} smooth={true} duration={500} >
+                    <i className="fas fa-chart-line fa-fw fa-2x  cyan-text text-darken-1" ></i> Опыт</Link></li>
+                <li><Link activeClass="active" className="test4 " to="Projects" spy={true} smooth={true} duration={500} >
+                    <i className="fas fa-code fa-fw fa-2x  cyan-text text-darken-1 test"  ></i> Мои проекты</Link></li>
+                <li><Link activeClass="active" className="test5" to="Skills" spy={true} smooth={true} duration={500} >
+                    <i className="fas fa-chart-bar fa-fw fa-2x pink-text text-lighten-1" ></i>Навыки и умения</Link></li>
+                <li><Link activeClass="active" className="test6" to="Education" spy={true} smooth={true} duration={500} >
+                    <i className="fas fa-user-graduate fa-fw fa-2x orange-text text-lighten-2" ></i>Образование</Link></li>
+                <li><Link activeClass="active" className="test7" to="Resume" spy={true} smooth={true} duration={500} >
+                    <i className="fa fa-file-text fa-fw fa-2x grey-text text-darken-2"></i>Резюме скачать</Link></li>
+                <li><Link activeClass="active" className="test8  " to="WriteMe" spy={true} smooth={true} duration={500} >
+                    <i className="fas fa-comment-dots fa-fw fa-2x red-text text-darken-3"></i>Напишите мне</Link></li>
+            </ul >
 
 
         </>

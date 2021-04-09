@@ -2,10 +2,10 @@ import React from 'react';
 
 
 
-export const WriteMe = () => {
+export const Projects = () => {
     return (
         <div>
-            <h1>Write me</h1>
+            <h1>Мои проекты</h1>
             Что-то
             <br />
             Что-то
@@ -16,10 +16,6 @@ export const WriteMe = () => {
             <br />
             Что-то
             <br />
-            Что-то
-            <br />
-            <i className="test" >dsdsdsdsdsQQQQQQ</i>
         </div>
-
     )
 }

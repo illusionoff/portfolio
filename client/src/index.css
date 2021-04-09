@@ -1,11 +1,17 @@
 @import "~materialize-css/dist/css/materialize.min.css";
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
+html {
+    font-family: Georgia, sans-serif;
+    /* font-style: italic; */
+    background-color: #e0f2f1 ;
+}
 main {
-    padding-left: 200px;
+    padding-left: 240px;
     /* padding-top: 64px; */
-    /* margin-top: 64px; */
+    /* margin-top: -64px; */
   }
+
 
   /* .content {
     margin-top: 64px;
@@ -22,10 +28,131 @@ main {
     }
   }
 
+  @media only screen and (min-width : 992px) {
+
+    /* main {
+      margin-top: -72px;
+    } */
+
+  .navbar-fixed {
+    visibility: hidden;
+   }
+ }
+
+ /* .slide-out {
+   background-color: #00acc1 !important;
+ } */
+
+
 .active {
-    background-color: LightGrey;
+    /* background-color: LightGrey !important; */
+    background-color: #80cbc4 !important;
   }
 
   .sidenav {
-    width: 200px;
+    width: 240px;
+    background-color: #e0f2f1 ;
   }
+  .sidenav li>a.test1 {
+    height: 136px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fafafa;
+    /* margin-top: 0px; */
+  }
+
+  .sidenav li>a {
+    padding: 0 24px;
+    background-color: #e0f2f1 ;
+  }
+
+  .sidenav li>a.test1>h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /* padding-top: 12px; */
+    padding: 12px 12px 0px 12px ;
+    /* color: #1E88E5; */
+    color: #00acc1;
+    font-style: italic;
+    font-weight: 200;
+
+  }
+
+  .sidenav li>a.test1>span {
+    /* padding: 0px; */
+    padding: 0px 0px 0px 12px ;
+    font-style: italic;
+  }
+
+  /* .material-icons.md-36 { 
+    font-size: 36px; 
+    top: 6px;
+    padding: 0px 12px 0px 12px;
+    position: relative;
+
+
+    
+    height: 36px;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    } */
+
+  /* .material-icons.orange600 { color: #FB8C00; } */
+
+  /* .sidenav .fas ,.sidenav .fa {
+    color: red;
+  } */
+
+  /* .sidenav .fa-envelope-open {
+    color: SaddleBrown;
+  }
+
+  .sidenav .fa-user {
+    color: green;
+  }
+
+  .sidenav .fa-chart-line {
+    color: blue;
+  }
+
+  .sidenav .fa-user-graduate {
+    color: red;
+  }
+
+  .sidenav .fa-file-text {
+    color: red;
+  }
+
+  .sidenav .fa-comment-dots {
+    color: red;
+  }  */
+
+  /* .sidenav .fa-envelope-open {
+    color: red;
+  }
+
+  /* .fa { */
+    /* color: #00acc1; */
+    /* color:#00acc1 !important; */
+    /* font-size: 24px;  */
+    /* font-size: 1.5em; */
+    /* top: 6px; */
+              /* padding: 0px 12px 0px 12px; */
+              /* position: relative; */
+    /* width: 32px; */
+
+
+    /* display: inline-flex !important;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center; */
+ 
+  /* } */
+  /* .test {
+    font-size: 56px;
+    font-stretch: extra-condensed !important;
+
+  transform: scaleX(0.5);
+
+  } */

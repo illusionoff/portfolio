@@ -5,6 +5,7 @@ import { Intro } from './components/Intro';
 import { Contact } from './components/Contact';
 import { About } from './components/About';
 import { Expirience } from './components/Expirience';
+import { Projects } from './components/Projects';
 import { Skills } from './components/Skills';
 import { Education } from './components/Education';
 import { Resume } from './components/Resume';
@@ -46,6 +47,12 @@ function App() {
           <section id="Expirience">
             <div className="container">
               <Expirience />
+            </div >
+          </section >
+
+          <section id="Projects">
+            <div className="container">
+              <Projects />
             </div >
           </section >
 
