@@ -24,64 +24,44 @@ function App() {
           <Navbar />
         </section >
 
-        <div className="content">
+        <section id="intro">
+          <Intro />
+        </section >
 
-          <section id="intro">
-            <div className="container">
-              <Intro />
-            </div >
-          </section >
+        <section id="Contact">
+          <Contact />
+        </section >
 
-          <section id="Contact">
-            <div className="container">
-              <Contact />
-            </div >
-          </section >
+        <section id="About">
+          <About />
+        </section >
 
-          <section id="About">
-            <div className="container">
-              <About />
-            </div >
-          </section >
+        <section id="Expirience">
+          <Expirience />
+        </section >
 
-          <section id="Expirience">
-            <div className="container">
-              <Expirience />
-            </div >
-          </section >
+        <section id="Projects">
+          <Projects />
+        </section >
 
-          <section id="Projects">
-            <div className="container">
-              <Projects />
-            </div >
-          </section >
+        <section id="Skills">
+          <Skills />
+        </section >
 
-          <section id="Skills">
-            <div className="container">
-              <Skills />
-            </div >
-          </section >
+        <section id="Education" className="full-height">
+          <Education />
+        </section >
 
-          <section id="Education">
-            <div className="container">
-              <Education />
-            </div >
-          </section >
+        <section id="Resume" className="full-height">
+          <Resume />
+        </section >
 
-          <section id="Resume">
-            <div className="container">
-              <Resume />
-            </div >
-          </section >
+        <section id="WriteMe" className="full-height">
+          <WriteMe />
+        </section >
 
-          <section id="WriteMe">
-            <div className="container">
-              <WriteMe />
-            </div >
-          </section >
-
-          {/* </Router> */}
-        </div>
+        {/* </Router> */}
+        {/* </div> */}
       </main>
     </>
   );

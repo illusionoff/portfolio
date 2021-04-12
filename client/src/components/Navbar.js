@@ -1,5 +1,5 @@
-import React from 'react';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
+// import { useEffect } from 'react';
 import { NavLink, useHistory } from 'react-router-dom';
 import { Link, Events, animateScroll as scroll } from 'react-scroll';
 import M from 'materialize-css/dist/js/materialize.min.js';
@@ -55,6 +55,7 @@ export const Navbar = () => {
                 <li><Link activeClass="active" className="sidenav-close" to="Contact" spy={true} smooth={true} duration={500} offset={-56}>Контакты</Link></li>
                 <li><Link activeClass="active" className="sidenav-close" to="About" spy={true} smooth={true} duration={500} offset={-56}>Обо мне</Link></li>
                 <li><Link activeClass="active" className="sidenav-close" to="Expirience" spy={true} smooth={true} duration={500} offset={-56}>Опыт</Link></li>
+                <li><Link activeClass="active" className="sidenav-close" to="Projects" spy={true} smooth={true} duration={500} offset={-56}>Мои проекты</Link></li>
                 <li><Link activeClass="active" className="sidenav-close" to="Skills" spy={true} smooth={true} duration={500} offset={-56}>Навыки и умения</Link></li>
                 <li><Link activeClass="active" className="sidenav-close" to="Education" spy={true} smooth={true} duration={500} offset={-56}>Образование</Link></li>
                 <li><Link activeClass="active" className="sidenav-close" to="Resume" spy={true} smooth={true} duration={500} offset={-56}>Резюме скачать</Link></li>
@@ -64,7 +65,7 @@ export const Navbar = () => {
 
 
             <ul id="slide-out-left-fixed" className="sidenav sidenav-fixed">
-                <li><Link activeClass="active" className="test1" to="intro" spy={true} smooth={true} duration={500} offset={-64} >
+                <li><Link activeClass="active" className="test1" to="intro" spy={true} smooth={true} duration={500}  >
                     <h4>Siniakou Alex</h4>
                     <span className="brown-text light">Full Stack Developer</span> </Link></li>
                 <li><Link activeClass="active" className="test2" to="Contact" spy={true} smooth={true} duration={500} >

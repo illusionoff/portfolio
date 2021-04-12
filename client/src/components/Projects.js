@@ -5,8 +5,9 @@ import React from 'react';
 export const Projects = () => {
     return (
         <div>
-            <h1>Мои проекты</h1>
-            Что-то
+            <h3 className="page-title white-text teal">Мои проекты</h3>
+            <div className="container">
+                Что-то
             <br />
             Что-то
             <br />
@@ -16,6 +17,7 @@ export const Projects = () => {
             <br />
             Что-то
             <br />
+            </div>
         </div>
     )
 }

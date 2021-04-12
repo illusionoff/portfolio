@@ -5,8 +5,9 @@ import React from 'react';
 export const About = () => {
     return (
         <div>
-            <h1>About</h1>
-            Что-то
+            <h3 className="page-title white-text teal">About</h3>
+            <div className="container">
+                Что-то
             <br />
             Что-то
             <br />
@@ -16,6 +17,7 @@ export const About = () => {
             <br />
             Что-то
             <br />
+            </div>
         </div>
     )
 }

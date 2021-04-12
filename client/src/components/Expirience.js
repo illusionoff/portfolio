@@ -5,8 +5,10 @@ import React from 'react';
 export const Expirience = () => {
     return (
         <div>
-            <h1>Expirience</h1>
-            Что-то
+
+            <h3 className="page-title white-text teal">Expirience</h3>
+            <div className="container">
+                Что-то
             <br />
             Что-то
             <br />
@@ -16,6 +18,7 @@ export const Expirience = () => {
             <br />
             Что-то
             <br />
+            </div>
         </div>
     )
 }

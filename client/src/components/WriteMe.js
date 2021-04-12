@@ -5,8 +5,9 @@ import React from 'react';
 export const WriteMe = () => {
     return (
         <div>
-            <h1>Write me</h1>
-            Что-то
+            <h3 className="page-title white-text teal">Write me</h3>
+            <div className="container">
+                Что-то
             <br />
             Что-то
             <br />
@@ -18,7 +19,8 @@ export const WriteMe = () => {
             <br />
             Что-то
             <br />
-            <i className="test" >dsdsdsdsdsQQQQQQ</i>
+                <i className="test" >dsdsdsdsdsQQQQQQ</i>
+            </div>
         </div>
 
     )
