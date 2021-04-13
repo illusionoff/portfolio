@@ -5,6 +5,8 @@ html {
     font-family: Georgia, sans-serif;
     /* font-style: italic; */
     background-color: #e0f2f1 ;
+    color: #333;
+    font-size: 16px;
 }
 main {
     padding-left: 240px;
@@ -58,23 +60,173 @@ main {
   .navbar-fixed {
     visibility: hidden;
    }
+
+   .card .role {
+    position: relative;
+    right: initial;
+    top: initial;
+  }
  }
 
  /* .slide-out {
    background-color: #00acc1 !important;
  } */
 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*  */
+.card {
+  margin-bottom: 60px;
+}
+.card .role {
+  font-size: 1.25rem;
+  /* position: absolute;
+  right: 38px;
+  top: 35px; */
+}
+.card li a {
+  margin-right: 0;
+  color: #333;
+  border-bottom: 2px solid #ffab40;
+}
+.card li a:hover {
+  color: #333;
+  font-weight: 500;
+}
+.card .card-content {
+  padding-bottom: 30px;
+}
+.card .card-content p {
+  padding: 5px 0 0;
+}
+.card h5 {
+  font-size: 1.5rem;
+  margin-bottom: -0.5rem;
+  margin-top: 2rem;
+}
+.card h6 {
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+#Experience .card-action {
+  background-color: rgba(0, 0, 0, 0.02);
+  border: none;
+}
+#Experience .card .col.s12.m2 a {
+  display: block;
+}
+#Experience .card .col.s12.m2 a img {
+  max-height: 60px;
+}
+.card-action span {
+  font-size: 85%;
+  color: #666;
+}
+.card ul {
+  margin-bottom: 0;
+}
+.card ul li {
+  line-height: 200%;
+  list-style-type: disc;
+  margin-left: 24px;
+}
+.card ul li li {
+  color: #666;
+  font-size: 13px;
+}
+.card .card-title {
+  font-size: 24px;
+}
+.card .card-content .card-title {
+  line-height: 2.5rem;
+}
+.card i.right {
+  margin-left: 10px;
+}
+a.hoverline {
+  border-bottom: 3px solid transparent !important;
+  padding: 3px 3px 0 3px;
+  transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -webkit-transition: 0.25s all;
+}
+a.hoverline:hover {
+  border-bottom: 3px solid #009688 !important;
+}
+#skills .card.large {
+  height: 360px;
+}
+#skills h4 {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+#skills .col img.responsive-img {
+  margin: 0 auto;
+  max-height: 100px;
+  padding-bottom: 10px;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+.card.large .card-content p {
+  color: inherit;
+  margin: 0;
+  padding: 30px 0;
+}
+#Experience .card-content .row {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+.card.large .card-image {
+  height: 230px;
+}
+.card.large .card-content {
+  height: auto;
+}
+.card.medium .card-image {
+  height: 240px;
+}
+.card-action a.btn-floating {
+  margin-bottom: 0;
+}
+
+#contact a:not(.btn-floating) {
+  bottom: 6px;
+  left: 20px;
+  position: relative;
+}
+#Experience .col.s12.m2 {
+  text-align: center;
+}
+/*  */
+
+@media (min-width: 1200px) {
+  #Experience .container {
+      width: 860px;
+  }
+}
+/* .container .row {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+} */
 
 .active {
     /* background-color: LightGrey !important; */
-    background-color: #80cbc4 !important;
+    background-color: #80cbc4 ;
   }
 
   .sidenav {
     width: 240px;
     background-color: #e0f2f1 ;
   }
-  .sidenav li>a.test1 {
+  .sidenav li>a.intro {
     height: 136px;
     border-bottom: 1px solid #ddd;
     background-color: #fafafa;
@@ -86,7 +238,7 @@ main {
     background-color: #e0f2f1 ;
   }
 
-  .sidenav li>a.test1>h4 {
+  .sidenav li>a.intro>h4 {
     margin-top: 0px;
     margin-bottom: 0px;
     /* padding-top: 12px; */
@@ -98,10 +250,25 @@ main {
 
   }
 
-  .sidenav li>a.test1>span {
-    /* padding: 0px; */
+  .sidenav li>a.intro>span {
     padding: 0px 0px 0px 12px ;
     font-style: italic;
+  }
+
+  /* .sidenav li>a.intro.active {
+    background-color:red;
+  } */
+
+
+  .sidenav li>a.side-bg-color.active {
+    background-color:#b2dfdb;
+  }
+
+  .sidenav li>a.intro-mobile {
+    /* padding-left: 40px; */
+    font-style: italic;
+    font-size: 18px;
+    border-bottom: 2px solid #ddd;
   }
 
   /* .material-icons.md-36 { 

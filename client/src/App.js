@@ -4,7 +4,7 @@ import { Navbar } from './components/Navbar';
 import { Intro } from './components/Intro';
 import { Contact } from './components/Contact';
 import { About } from './components/About';
-import { Expirience } from './components/Expirience';
+import { Expirience } from './components/Experience';
 import { Projects } from './components/Projects';
 import { Skills } from './components/Skills';
 import { Education } from './components/Education';
@@ -36,7 +36,7 @@ function App() {
           <About />
         </section >
 
-        <section id="Expirience">
+        <section id="Experience">
           <Expirience />
         </section >
 
