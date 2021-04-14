@@ -54,8 +54,7 @@ export const Navbar = () => {
                 <li><Link activeClass="active" className="sidenav-close intro-mobile" to="intro" spy={true} smooth={true} duration={500} offset={-56}> <center> Siniakou Alex </center></Link></li>
                 <li><Link activeClass="active" className="sidenav-close " to="Contact" spy={true} smooth={true} duration={500} offset={-56}><i className="fas fa-envelope-open fa-fw fa-2x  brown-text text-darken-1" ></i>Контакты</Link></li>
                 <li><Link activeClass="active" className="sidenav-close " to="About" spy={true} smooth={true} duration={500} offset={-56}><i className="fas fa-user fa-fw fa-2x green-text text-lighten-1" ></i>Обо мне</Link></li>
-                <li><Link activeClass="active" className="sidenav-close" to="Experience" spy={true} smooth={true} duration={500} offset={-56}><i className="fas fa-chart-line fa-fw fa-2x  cyan-text text-darken-1" ></i>Опыт</Link></li>
-                <li><Link activeClass="active" className="sidenav-close" to="Projects" spy={true} smooth={true} duration={500} offset={-56}><i className="fas fa-code fa-fw fa-2x  cyan-text text-darken-1 test"  ></i>Мои проекты</Link></li>
+                <li><Link activeClass="active" className="sidenav-close" to="ExperienceProgects" spy={true} smooth={true} duration={500} offset={-56}><i className="fas fa-code fa-fw fa-2x  cyan-text text-darken-1" ></i>Опыт и проекты</Link></li>
                 <li><Link activeClass="active" className="sidenav-close" to="Skills" spy={true} smooth={true} duration={500} offset={-56}><i className="fas fa-chart-bar fa-fw fa-2x pink-text text-lighten-1" ></i>Навыки и умения</Link></li>
                 <li><Link activeClass="active" className="sidenav-close" to="Education" spy={true} smooth={true} duration={500} offset={-56}><i className="fas fa-user-graduate fa-fw fa-2x orange-text text-lighten-2" ></i>Образование</Link></li>
                 <li><Link activeClass="active" className="sidenav-close" to="Resume" spy={true} smooth={true} duration={500} offset={-56}><i className="fa fa-file-text fa-fw fa-2x grey-text text-darken-2"></i>Резюме скачать</Link></li>
@@ -72,10 +71,8 @@ export const Navbar = () => {
                     <i className="fas fa-envelope-open fa-fw fa-2x  brown-text text-darken-1" ></i>Контакты</Link></li>
                 <li><Link activeClass="active" className="side-bg-color" to="About" spy={true} smooth={true} duration={500} >
                     <i className="fas fa-user fa-fw fa-2x green-text text-lighten-1" ></i>Обо мне</Link></li>
-                <li><Link activeClass="active" className="side-bg-color " to="Experience" spy={true} smooth={true} duration={500} >
-                    <i className="fas fa-chart-line fa-fw fa-2x  cyan-text text-darken-1" ></i> Опыт</Link></li>
-                <li><Link activeClass="active" className="side-bg-color " to="Projects" spy={true} smooth={true} duration={500} >
-                    <i className="fas fa-code fa-fw fa-2x  cyan-text text-darken-1 test"  ></i> Мои проекты</Link></li>
+                <li><Link activeClass="active" className="side-bg-color " to="ExperienceProgects" spy={true} smooth={true} duration={500} >
+                    <i className="fas fa-code fa-fw fa-2x  cyan-text text-darken-1" ></i> Опыт и проекты</Link></li>
                 <li><Link activeClass="active" className="side-bg-color" to="Skills" spy={true} smooth={true} duration={500} >
                     <i className="fas fa-chart-bar fa-fw fa-2x pink-text text-lighten-1" ></i>Навыки и умения</Link></li>
                 <li><Link activeClass="active" className="side-bg-color" to="Education" spy={true} smooth={true} duration={500} >

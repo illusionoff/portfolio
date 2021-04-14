@@ -15,18 +15,6 @@ main {
     margin-top: -64px;
   }
 
-
-
-  /* .content {
-    margin-top: 64px;
-  } */
-
-  
-  /* #About{
-    padding-top: 64px;
-  } */
-
-
   h3 {
     font-weight: 200;
     margin-bottom: 60px;
@@ -39,38 +27,25 @@ main {
     height: 100vh;
 }
 
-  @media only screen and (max-width : 992px) {
-     main {
-      padding-left: 0;
-      margin-top: 0px;
-    }
-
-    h3 {
-      padding: 20px 30px;
-      margin-bottom: 40px;
-    }
-  }
 
   @media only screen and (min-width : 992px) {
-
-    /* main {
-      margin-top: -72px;
-    } */
 
   .navbar-fixed {
     visibility: hidden;
    }
 
-   .card .role {
-    position: relative;
-    right: initial;
-    top: initial;
+   .card .card-project .card-image {
+    /* height: 75%;
+    width: 75%; */
+    border: 1px solid #ddd;
+    margin-top: 24px;
   }
- }
 
- /* .slide-out {
-   background-color: #00acc1 !important;
- } */
+  #ExperienceProgects .col.s12.m10.link.text {
+    text-align: left;
+  }
+
+ }
 
 .row:after {
   content: "";
@@ -78,7 +53,6 @@ main {
   clear: both;
 }
 
-/*  */
 .card {
   margin-bottom: 60px;
 }
@@ -114,14 +88,14 @@ main {
   margin-top: 2rem;
   text-transform: uppercase;
 }
-#Experience .card-action {
+#ExperienceProgects .card-action {
   background-color: rgba(0, 0, 0, 0.02);
   border: none;
 }
-#Experience .card .col.s12.m2 a {
+/* #ExperienceProgects .card .col.s12.m2 a {
   display: block;
-}
-#Experience .card .col.s12.m2 a img {
+} */
+#ExperienceProgects .card .col.s12.m2 a img {
   max-height: 60px;
 }
 .card-action span {
@@ -180,42 +154,62 @@ a.hoverline:hover {
   margin: 0;
   padding: 30px 0;
 }
-#Experience .card-content .row {
+#ExperienceProgects .card-content .row {
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
 }
-.card.large .card-image {
-  height: 230px;
+.card .card-project .card-image {
+  /* height: 50%;
+  width: 50%; */
+  border: 1px solid #ddd;
+  margin-top: 24px;
 }
-.card.large .card-content {
-  height: auto;
-}
-.card.medium .card-image {
-  height: 240px;
-}
+
 .card-action a.btn-floating {
   margin-bottom: 0;
 }
 
-#contact a:not(.btn-floating) {
-  bottom: 6px;
-  left: 20px;
-  position: relative;
-}
-#Experience .col.s12.m2 {
+/* #ExperienceProgects .col.s12.m2 {
   text-align: center;
+} */
+
+@media only screen and (max-width : 992px) {
+  main {
+   padding-left: 0;
+   margin-top: 0px;
+ }
+
+ h3 {
+   padding: 20px 30px;
+   margin-bottom: 40px;
+   font-size: 30px;
+ }
+
+ .card .role {
+   position: relative;
+   right: initial;
+   top: initial;
+ }
+
+ .card .card-title {
+  font-size: 20px;
 }
-/*  */
+
+#ExperienceProgects .col.s12.m2.link, #ExperienceProgects .col.s12.m10.link {
+  /* margin-top: 16px; */
+  /* margin-left: 38px; */
+  /* text-align: center; */
+  font-size: 14px;
+}
+
+}
 
 @media (min-width: 1200px) {
-  #Experience .container {
+  #ExperienceProgects .container {
       width: 860px;
   }
+
 }
-/* .container .row {
-  margin-left: -0.75rem;
-  margin-right: -0.75rem;
-} */
 
 .active {
     /* background-color: LightGrey !important; */
@@ -255,11 +249,6 @@ a.hoverline:hover {
     font-style: italic;
   }
 
-  /* .sidenav li>a.intro.active {
-    background-color:red;
-  } */
-
-
   .sidenav li>a.side-bg-color.active {
     background-color:#b2dfdb;
   }
@@ -271,83 +260,9 @@ a.hoverline:hover {
     border-bottom: 2px solid #ddd;
   }
 
-  /* .material-icons.md-36 { 
-    font-size: 36px; 
-    top: 6px;
-    padding: 0px 12px 0px 12px;
-    position: relative;
-
-
-    
-    height: 36px;
-    position: absolute;
-    top: 50%;
-    margin-top: -50px;
-    } */
-
-  /* .material-icons.orange600 { color: #FB8C00; } */
-
-  /* .sidenav .fas ,.sidenav .fa {
-    color: red;
-  } */
-
-  /* .sidenav .fa-envelope-open {
-    color: SaddleBrown;
+  nav .brand-logo {
+    font-size: 28px;
   }
-
-  .sidenav .fa-user {
-    color: green;
-  }
-
-  .sidenav .fa-chart-line {
-    color: blue;
-  }
-
-  .sidenav .fa-user-graduate {
-    color: red;
-  }
-
-  .sidenav .fa-file-text {
-    color: red;
-  }
-
-  .sidenav .fa-comment-dots {
-    color: red;
-  }  */
-
-  /* .sidenav .fa-envelope-open {
-    color: red;
-  }
-
-  /* .fa { */
-    /* color: #00acc1; */
-    /* color:#00acc1 !important; */
-    /* font-size: 24px;  */
-    /* font-size: 1.5em; */
-    /* top: 6px; */
-              /* padding: 0px 12px 0px 12px; */
-              /* position: relative; */
-    /* width: 32px; */
-
-
-    /* display: inline-flex !important;
-    width: 40px;
-    height: 40px;
-    align-items: center;
-    justify-content: center; */
- 
-  /* } */
-  /* .test {
-    font-size: 56px;
-    font-stretch: extra-condensed !important;
-
-  transform: scaleX(0.5);
-
-  } */
-
-  /* #Contact.fas {
-border: 0px 32px;
-  } */
 
   #Contact a:not(.btn-floating) {
     left: 20px;
@@ -363,10 +278,33 @@ border: 0px 32px;
   }
 
   #Contact a.btn-floating.btn-large {
-    /* line-height: 55.5px; */
+   
     display: block;
     text-align: center;
     margin: 0 auto;
 }
+ /* line-height: 55.5px; */
 
+}
+
+.border-bottom {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 12px;
+}
+
+/* #ExperienceProgects .col.s12.m4.link {
+  margin-right: 16px;
+  margin-left: 38px;
+} */
+
+#ExperienceProgects .col.s12.m2.link, #ExperienceProgects .col.s12.m10.link {
+  text-align: center;
+}
+
+#ExperienceProgects .col.s12.m10.link.text {
+  margin-top: 12px;
+}
+
+#ExperienceProgects .linksName {
+  margin-bottom: 24px;
 }
