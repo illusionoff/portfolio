@@ -27,6 +27,14 @@ main {
     height: 100vh;
 }
 
+@media only screen and (min-width : 601px) {
+
+
+  #ExperienceProgects .col.s12.m10.link.text {
+    text-align: left;
+  }
+
+ }
 
   @media only screen and (min-width : 992px) {
 
@@ -40,12 +48,8 @@ main {
     border: 1px solid #ddd;
     margin-top: 24px;
   }
-
-  #ExperienceProgects .col.s12.m10.link.text {
-    text-align: left;
-  }
-
  }
+
 
 .row:after {
   content: "";
@@ -191,22 +195,18 @@ a.hoverline:hover {
    top: initial;
  }
 
- .card .card-title {
-  font-size: 20px;
-}
-
-#ExperienceProgects .col.s12.m2.link, #ExperienceProgects .col.s12.m10.link {
-  /* margin-top: 16px; */
-  /* margin-left: 38px; */
-  /* text-align: center; */
-  font-size: 14px;
-}
-
 }
 
 @media (min-width: 1200px) {
   #ExperienceProgects .container {
       width: 860px;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .card .card-title {
+    font-size: 18px;
   }
 
 }
@@ -284,6 +284,16 @@ a.hoverline:hover {
     margin: 0 auto;
 }
  /* line-height: 55.5px; */
+ #ExperienceProgects table.striped>tbody>tr>td {
+  font-size: 14px;
+}
+
+#ExperienceProgects .col.s12.m2.link, #ExperienceProgects .col.s12.m10.link {
+  /* margin-top: 16px; */
+  /* margin-left: 38px; */
+  /* text-align: center; */
+  font-size: 13px;
+}
 
 }
 
@@ -308,3 +318,93 @@ a.hoverline:hover {
 #ExperienceProgects .linksName {
   margin-bottom: 24px;
 }
+
+#ExperienceProgects table.striped>tbody>tr>td {
+  padding: 5px 5px;
+}
+
+/*  */
+.spravca {
+  border-bottom: 1px solid #ddd;
+}
+
+.reference {
+  display: none;
+  /* border-bottom: 1px solid #ddd; */
+  }
+  .reference ~ .story {
+  display: none;
+  }
+  .reference + label {
+  font-size: 16px;
+  padding: 0;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  }
+  .reference:checked ~ .story {
+  display: block;
+  /* background: #e0f2f1; */
+  padding: 10px;
+  }
+
+/* .myfooter { */
+  /* height: 50vh; */
+  /* min-height: 100vh; */
+  /* margin-top: 40%;
+  min-height: 80px;  */
+  /* font-size: 50px; */
+/* } */
+
+/* body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+} */
+
+/* .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+} */
+
+blockquote {
+  border-left: 5px solid #616161;
+  color: #616161;
+  font-size: 125%;
+  font-weight: 400;
+  margin: 20px 0;
+  padding-left: 1.5rem;
+}
+
+#Skills img.responsive-img {
+  margin: 0 auto;
+  /* max-height: 100px; */
+  height: 100px;
+  padding-bottom: 10px;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+#Skills h4 {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+.img-right {
+  transform: rotate(45deg);
+ }
+
+ .img-left {
+  transform: rotate(-45deg);
+ }
