@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 // import { useEffect } from 'react';
-import { NavLink, useHistory } from 'react-router-dom';
-import { Link, Events, animateScroll as scroll } from 'react-scroll';
+// import { NavLink, useHistory } from 'react-router-dom';
+// import { Link, Events, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 import M from 'materialize-css/dist/js/materialize.min.js';
 
 
@@ -12,6 +13,7 @@ export const Navbar = () => {
     useEffect(() => {
         // M.AutoInit();
         const elems = document.querySelectorAll(".sidenav");
+        // eslint-disable-next-line no-unused-vars
         const instances = M.Sidenav.init(elems);
 
 
@@ -43,7 +45,9 @@ export const Navbar = () => {
             <div className="navbar-fixed">
                 <nav>
                     <div className="nav-wrapper cyan darken-1" style={{ padding: '0 2rem' }}>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a href="#" className="brand-logo">Siniakou Alex</a>
+                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a href="#" data-target="slide-out" className="sidenav-trigger"><i className="material-icons">menu</i></a>
                         {/* <li><a href="#" data-target="slide-out" className="sidenav-trigger"><i className="material-icons">menu</i></a></li> */}
                     </div>

@@ -9,8 +9,8 @@ const config = require('config');
 
 const app = express();
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.json({ extended: true }));
+// app.use(express.urlencoded({ extended: false }));
 
 
 // app.use('/api/auth', require('./routes/auth.routes'));
@@ -28,7 +28,7 @@ app.use(express.urlencoded({ extended: false }));
 const PORT = config.get('port') || 5000;
 
 app.use('/', require('./routes/routerIndex'));
-app.use('/message', require('./routes/routerMessage')); // работает тест БД
+app.use('/api/message', require('./routes/routerMessage')); // работает тест БД
 // app.use('/select', require('./routes/routerPostrgresql')); // работает тест БД
 
 async function start() {

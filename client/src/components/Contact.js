@@ -9,6 +9,7 @@ export const Contact = () => {
     useEffect(() => {
         // M.AutoInit();
         const elems = document.querySelectorAll(".tooltipped");
+        // eslint-disable-next-line no-unused-vars
         const instances = M.Tooltip.init(elems);
 
 

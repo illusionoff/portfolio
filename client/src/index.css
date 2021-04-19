@@ -23,9 +23,19 @@ main {
     text-transform: uppercase;
   }
 
-  .full-height {
+.full-height {
     height: 100vh;
 }
+
+.container {
+  padding: 0 .75rem ;
+}
+
+#Education .container {
+  padding: 0px ;
+}
+
+
 
 @media only screen and (min-width : 601px) {
 
@@ -127,6 +137,9 @@ main {
 .card i.right {
   margin-left: 10px;
 }
+/* .card a {
+  text-transform: uppercase;
+} */
 a.hoverline {
   border-bottom: 3px solid transparent !important;
   padding: 3px 3px 0 3px;
@@ -137,6 +150,7 @@ a.hoverline {
 a.hoverline:hover {
   border-bottom: 3px solid #009688 !important;
 }
+
 #skills .card.large {
   height: 360px;
 }
@@ -211,10 +225,10 @@ a.hoverline:hover {
 
 }
 
-.active {
-    /* background-color: LightGrey !important; */
+/* .active {
     background-color: #80cbc4 ;
-  }
+  } */
+      /* background-color: LightGrey !important; */
 
   .sidenav {
     width: 240px;
@@ -292,7 +306,7 @@ a.hoverline:hover {
   /* margin-top: 16px; */
   /* margin-left: 38px; */
   /* text-align: center; */
-  font-size: 13px;
+  font-size: 12px;
 }
 
 }
@@ -401,10 +415,32 @@ blockquote {
   padding-bottom: 20px;
 }
 
-.img-right {
+/* .img-right {
   transform: rotate(45deg);
  }
 
  .img-left {
   transform: rotate(-45deg);
- }
+ } */
+
+/* #WriteMe input[type=text]:not(.browser-default):focus:not([readonly])+label {
+  color: yellow;
+} */
+
+input.yellow-input {
+  border-bottom: 1px solid #fff !important;
+  box-shadow: 0 1px 0 0 #fff !important;
+}
+
+input.yellow-input + label {
+  color: #ffffff !important;
+}
+
+input.yellow-input:focus + label {
+  color: #ffeb3b !important;
+}
+
+input.yellow-input:focus {
+  border-bottom: 1px solid #ffeb3b !important;
+  box-shadow: 0 1px 0 0 #ffeb3b !important;
+}

@@ -8,6 +8,7 @@ export const ExperienceProgects = () => {
     useEffect(() => {
         // M.AutoInit();
         const elems = document.querySelectorAll(".tooltipped");
+        // eslint-disable-next-line no-unused-vars
         const instances = M.Tooltip.init(elems);
 
 
@@ -87,7 +88,7 @@ export const ExperienceProgects = () => {
                         <div className="spravca">
                             <input type="checkbox" id="hd-1" className="reference" />
                             <h6>Дополнительные технологии, библиотеки</h6>
-                            <label for="hd-1" ><span>Показать / Скрыть</span></label>
+                            <label htmlFor="hd-1" ><span>Показать / Скрыть</span></label>
                             <span className="story">
                                 <table className="striped ">
                                     <tbody>
@@ -240,7 +241,7 @@ export const ExperienceProgects = () => {
                         <div className="spravca">
                             <input type="checkbox" id="hd-2" className="reference" />
                             <h6>Дополнительные технологии, библиотеки</h6>
-                            <label for="hd-2" ><span>Показать / Скрыть</span></label>
+                            <label htmlFor="hd-2" ><span>Показать / Скрыть</span></label>
                             <span className="story">
                                 <table className="striped ">
                                     <tbody>

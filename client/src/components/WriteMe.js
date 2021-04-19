@@ -1,25 +1,83 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { useHttp } from '../hooks/http.hook';
+import { useMessage } from '../hooks/message.hook';
 
 
 
 export const WriteMe = () => {
+    const messageRequest = useMessage();
+    const { loading, error, request, clearError } = useHttp(); //error
+    const [form, setForm] = useState({
+        name: "", message: ""
+    });
+
+    useEffect(() => {
+        messageRequest(error);
+        clearError();
+    }, [error, messageRequest, clearError])
+
+    useEffect(() => {
+        window.M.updateTextFields()
+    }, [])
+
+    const changeHandler = event => {
+        setForm({ ...form, [event.target.name]: event.target.value })
+    }
+
+    const writeMeHandler = async () => {
+        try {
+            const data = await request('/api/message', 'POST', { ...form });
+            messageRequest(data.message);
+            console.log('Data:', data);
+        } catch (e) { }
+    }
+
     return (
         <>
             <div>
                 <h3 className="page-title white-text teal">Write me</h3>
                 <div className="container">
-                    Что-то
-            <br />
-            Что-то
-            <br />
-            Что-то
-            <br />
-            Что-то
-            <br />
-            Что-то
-            <br />
-            Что-то
-            <br />
+                    <div className="card  blue darken-1 black-text">
+                        <div className="card-content white-text">
+                            <span className="card-title">Отправить сообщение на Email</span>
+                            <div>
+
+                                <div className="input-field">
+                                    <input
+                                        placeholder="Введите ваше имя"
+                                        id="name"
+                                        type="text"
+                                        name="name"
+                                        className="yellow-input"
+                                        onChange={changeHandler}
+                                    />
+                                    <label htmlFor="name">Ваше имя:</label>
+                                </div>
+
+                                <div className="input-field">
+                                    <input
+                                        placeholder="Введите Сообщение"
+                                        id="message"
+                                        type="text"
+                                        name="message"
+                                        className="yellow-input"
+                                        onChange={changeHandler}
+                                    />
+                                    <label htmlFor="name">Ваше сообщение:</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div className="card-action">
+                            <button
+                                className="btn yellow darken-4"
+                                onClick={writeMeHandler}
+                                disabled={loading}
+                            >
+                                Отправить
+                            </button>
+                        </div>
+                    </div>
                     <i className="test" >dsdsdsdsdsQQQQQQ</i>
 
                     {/* <footer class="page-footer">

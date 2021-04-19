@@ -1,5 +1,5 @@
 
-import { BrowserRouter as Router } from 'react-router-dom';
+// import { BrowserRouter as Router } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Intro } from './components/Intro';
 import { Contact } from './components/Contact';
@@ -48,7 +48,7 @@ function App() {
           <Skills />
         </section >
 
-        <section id="Education" className="full-height">
+        <section id="Education">
           <Education />
         </section >
 
