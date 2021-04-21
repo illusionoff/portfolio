@@ -62,7 +62,7 @@ router.post('/',
 
       // await user.save()
 
-      res.status(201).json({ message: 'Пользователь создан' });
+      res.status(201).json({ message: 'Сообщение доставлено' });
     } catch (err) {
       // Упростить вывод ошибок при подготовке  prodaction ( лишняя информация для пользователя)
       console.error(`Error while getting quotes `, err.message);
