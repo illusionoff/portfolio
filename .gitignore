@@ -1,5 +1,5 @@
 .idea
 node_modules
-.test
+test
 ecosystem.config.js
 config
