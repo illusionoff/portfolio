@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-scroll';
 import M from 'materialize-css/dist/js/materialize.min.js';
 
 
@@ -32,9 +33,16 @@ export const Contact = () => {
                     </a>
                     <a target="_blank" rel="noreferrer" href="https://github.com/illusionoff" className="hoverline">https://github.com/illusionoff</a>
                 </p>
-            Writen me
+                <p>
 
-                </div>
+                    <Link activeClass="active" className="btn-floating btn-large waves-effect waves-light brown tooltipped " data-position="top" data-tooltip="Напишите мне" to="WriteMe" spy={true} smooth={true} duration={500} >
+                        <i className="fas fa-comment-dots fa-fw fa-2x white-text text-darken-3"></i>Напишите мне</Link>
+
+                    <Link activeClass="active" className="hoverline" to="WriteMe" spy={true} smooth={true} duration={500} >
+                        Напишите мне</Link>
+                </p>
+
+            </div>
         </div>
     )
 }
