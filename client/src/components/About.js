@@ -5,7 +5,7 @@ import React from 'react';
 export const About = () => {
     return (
         <div>
-            <h3 className="page-title white-text teal">About</h3>
+            <h3 className="page-title white-text">About</h3>
             <div className="container">
                 <blockquote>
                     Я начинающий Full Stack Nodejs разработчик. которому интересно создавать новое, пробираться через ошибки и проблемы, постоянно обучаться.

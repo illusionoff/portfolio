@@ -52,7 +52,7 @@ function App() {
           <Education />
         </section >
 
-        <section id="Resume" className="full-height">
+        <section id="Resume">
           <Resume />
         </section >
 

@@ -5,7 +5,7 @@ import React from 'react';
 export const Intro = () => {
     return (
         <div>
-            <h3 className="page-title white-text teal">intro</h3>
+            <h3 className="page-title white-text">intro</h3>
             <div className="container">
 
                 <h4>Full Stack Developer</h4>

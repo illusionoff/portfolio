@@ -1,7 +1,10 @@
 const { Router } = require('express');
 const router = Router();
 const quotes = require('../db/services/serviceQuotes');
-const { check, validationResult, body, Validator } = require('express-validator'); // body дополнительно взял
+const { check, validationResult, body } = require('express-validator'); // body дополнительно взял
+const nodemailer = require("nodemailer");
+const regEmail = require("../mail/message");
+const config = require('config');
 
 /* GET quotes listing. */
 // '/api/message'
@@ -29,10 +32,6 @@ router.post('/',
       .isLength({ min: 10, max: 1000 })
   ], async function (req, res) {
     try {
-      // res.json(await quotes.getMultiple(req.query));
-      // console.log("req.body: ", req.body);
-
-
       const errors = validationResult(req);
       if (!errors.isEmpty()) {
         return res.status(400).json({
@@ -46,23 +45,23 @@ router.post('/',
       console.log('routerMessage name', name);
       console.log('routerMessage name', message);
       const response = await quotes.getMultiple(name, message);
-      // const response = await quotes.getMultiple(name, message);
       // !!! использовал раньше "res.json(await quotes.getMultiple(name, message))" что вызывало ошибку, потому что уже res дали ответ и пытаюсь получается повторно отсылаю ответ браузеру
       if (!response) {
         return res.status(400).json({ message: 'Что-то пошло не так response' });
       }
-      // console.log('routerMessage', 'Что-то пошло не так response');
-      // return res.status(400).json({ message: 'Что-то пошло не так response' });
-      // if (candidate) {
-      //   return res.status(400).json({ message: 'Такой пользователь уже существует' })
-      // }
+      const transporter = nodemailer.createTransport(config.get('GMAIL_SETTINGS'));
 
-      // const hashedPassword = await bcrypt.hash(password, 12)
-      // const user = new User({ email, password: hashedPassword })
-
-      // await user.save()
-
+      async function RegisterSendMail(transporter, email, name, message) {
+        try {
+          await transporter.sendMail(regEmail(email, name, message));
+        } catch (e) {
+          console.log('RegisterSendMail email:', email);
+          console.log("ERROR await transporter.sendMail  catch (e):", e);
+          return res.status(400).json({ message: 'Что-то пошло не так email send catch (e):' });
+        }
+      }
       res.status(201).json({ message: 'Сообщение доставлено' });
+      await RegisterSendMail(transporter, config.get('EMAIL_TO'), name, message);
     } catch (err) {
       // Упростить вывод ошибок при подготовке  prodaction ( лишняя информация для пользователя)
       console.error(`Error while getting quotes `, err.message);

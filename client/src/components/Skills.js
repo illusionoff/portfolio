@@ -5,7 +5,7 @@ import React from 'react';
 export const Skills = () => {
     return (
         <div>
-            <h3 className="page-title white-text teal">Skills</h3>
+            <h3 className="page-title white-text">Skills</h3>
             <div className="container">
 
                 <div className="card">

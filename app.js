@@ -1,5 +1,5 @@
 console.log('App');
-
+const path = require('path');
 const express = require('express');
 const config = require('config');
 // const path = require('path');
@@ -30,6 +30,18 @@ const PORT = config.get('port') || 5000;
 app.use('/', require('./routes/routerIndex'));
 app.use('/api/message', require('./routes/routerMessage')); // работает тест БД
 // app.use('/select', require('./routes/routerPostrgresql')); // работает тест БД
+
+if (process.env.NODE_ENV === 'production') {
+  app.use('/', express.static(path.join(__dirname, 'client', 'build')))
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+  })
+
+  console.log("production mode");
+} else {
+  console.log("development mode");
+}
 
 async function start() {
   try {

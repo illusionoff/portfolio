@@ -21,7 +21,7 @@ export const WriteMe = () => {
     }, [])
 
     const changeHandler = event => {
-        setForm({ ...form, [event.target.name]: event.target.value })
+        setForm({ ...form, [event.target.name]: event.target.value });
     }
 
     const writeMeHandler = async () => {
@@ -35,11 +35,11 @@ export const WriteMe = () => {
     return (
         <>
             <div>
-                <h3 className="page-title white-text teal">Write me</h3>
+                <h3 className="page-title white-text">Write me</h3>
                 <div className="container">
                     <div className="card  blue darken-1 black-text">
                         <div className="card-content white-text">
-                            <span className="card-title">Отправить сообщение на Email</span>
+                            <span className="card-title">Отправить мне сообщение</span>
                             <div>
 
                                 <div className="input-field">
@@ -48,22 +48,37 @@ export const WriteMe = () => {
                                         id="name"
                                         type="text"
                                         name="name"
-                                        className="yellow-input"
+                                        className="yellow-input validate"
+                                        minLength="3"
+                                        // // pattern=".{3,500}"
+                                        maxLength="30"
+                                        data-length="30"
+                                        required
+                                        value={form.name}
                                         onChange={changeHandler}
                                     />
                                     <label htmlFor="name">Ваше имя:</label>
+                                    <span className="helper-text" data-error="Имя меньше трех символов"></span>
                                 </div>
 
                                 <div className="input-field">
-                                    <input
+                                    <textarea
                                         placeholder="Введите Сообщение"
                                         id="message"
                                         type="text"
                                         name="message"
-                                        className="yellow-input"
+                                        className=" yellow-input materialize-textarea validate"
+                                        minLength="3"
+                                        // pattern=".{3,500}"
+                                        // title="5 to 10 characters"
+                                        maxLength="1000"
+                                        data-length="1000"
+                                        required
+                                        value={form.message}
                                         onChange={changeHandler}
                                     />
-                                    <label htmlFor="name">Ваше сообщение:</label>
+                                    <label htmlFor="message" >Ваше сообщение:</label>
+                                    <span className="helper-text" data-error="Сообщение больше 1000 символов"></span>
                                 </div>
 
                             </div>

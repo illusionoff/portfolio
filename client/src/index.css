@@ -35,10 +35,17 @@ main {
   padding: 0px ;
 }
 
+/* .test-link-mini {
+  display: none;
+ } */
 
 
 @media only screen and (min-width : 601px) {
 
+     nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i  {
+    height: 56px !important;
+    line-height: 56px !important;
+  } 
 
   #ExperienceProgects .col.s12.m10.link.text {
     text-align: left;
@@ -47,6 +54,10 @@ main {
  }
 
   @media only screen and (min-width : 992px) {
+
+  .test-link-mini {
+    display: none;
+  }
 
   .navbar-fixed {
     visibility: hidden;
@@ -192,6 +203,11 @@ a.hoverline:hover {
 } */
 
 @media only screen and (max-width : 992px) {
+
+  .test-link-screen {
+    display: none;
+   }
+
   main {
    padding-left: 0;
    margin-top: 0px;
@@ -274,9 +290,12 @@ a.hoverline:hover {
     border-bottom: 2px solid #ddd;
   }
 
+
+
   nav .brand-logo {
     font-size: 28px;
   }
+
 
   #Contact a:not(.btn-floating) {
     left: 20px;
@@ -284,6 +303,7 @@ a.hoverline:hover {
 }
 
 @media (max-width: 600px) {
+
   #Contact a:not(.btn-floating) {
     text-align: center;
     display: block;
@@ -427,20 +447,33 @@ blockquote {
   color: yellow;
 } */
 
-input.yellow-input {
+#WriteMe .yellow-input {
   border-bottom: 1px solid #fff !important;
   box-shadow: 0 1px 0 0 #fff !important;
 }
 
-input.yellow-input + label {
+#WriteMe .yellow-input + label {
   color: #ffffff !important;
 }
 
-input.yellow-input:focus + label {
+#WriteMe .yellow-input:focus + label {
   color: #ffeb3b !important;
 }
 
-input.yellow-input:focus {
+#WriteMe .yellow-input:focus {
   border-bottom: 1px solid #ffeb3b !important;
   box-shadow: 0 1px 0 0 #ffeb3b !important;
 }
+
+#Contact, #Resume {
+  margin-bottom: 36px;
+}
+
+.page-title {
+  background:  #00acc1 !important;
+}
+
+div.waves-effect .waves-ripple {
+top: 50px;
+}
+
