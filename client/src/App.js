@@ -58,9 +58,6 @@ function App() {
 
         <section id="WriteMe" className="full-height">
           <WriteMe />
-          <div className="myfooter">
-            © 2014 Copyright Text Использованы иконки с Icons8.com
-            </div>
         </section >
 
         {/* </Router> */}

@@ -85,7 +85,8 @@ export const WriteMe = () => {
                         </div>
                         <div className="card-action">
                             <button
-                                className="btn yellow darken-4"
+                                // className="btn yellow darken-4"
+                                className="btn cyan darken-1"
                                 onClick={writeMeHandler}
                                 disabled={loading}
                             >
@@ -93,7 +94,6 @@ export const WriteMe = () => {
                             </button>
                         </div>
                     </div>
-                    <i className="test" >dsdsdsdsdsQQQQQQ</i>
 
                     {/* <footer class="page-footer">
                         <div class="container">
