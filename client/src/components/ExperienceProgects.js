@@ -28,7 +28,7 @@ export const ExperienceProgects = () => {
                             </div>
                             <div className="col s12 m10">
                                 <p>
-                                    <span className="card-title">
+                                    <span className="card-title ">
                                         Разработка Pet проекта
                                         {/* проекта HomeMoneyCalc */}
                                         {/* Back-end nodejs express  */}
@@ -47,7 +47,7 @@ export const ExperienceProgects = () => {
                             <div className="row">
                                 <div className="col s6 m3">
                                     <div className="card-image waves-effect waves-block waves-light">
-                                        <img alt="Screenshot of Homemoneycal web app" src="images/Homemoneycal_1.jpg" className="activator"></img>
+                                        <img alt="Screenshot of Homemoneycal web app" src="images/Homemoneycal_1.png" className="activator"></img>
                                     </div>
                                 </div>
                                 <div className="col s6 m3">
@@ -202,35 +202,13 @@ export const ExperienceProgects = () => {
                             Сайт портфолио на котором Вы находитесь</em>
                         </p>
                         <div className="card-project">
-                            <div className="row">
-                                <div className="col s6 m3">
-                                    <div className="card-image waves-effect waves-block waves-light">
-                                        <img alt="Screenshot of Homemoneycal web app" src="images/Homemoneycal_1.jpg" className="activator"></img>
-                                    </div>
-                                </div>
-                                <div className="col s6 m3">
-                                    <div className="card-image waves-effect waves-block waves-light">
-                                        <img alt="Screenshot of Homemoneycal web app" src="images/Homemoneycal_2.png" className="activator"></img>
-                                    </div>
-                                </div>
-                                <div className="col s6 m3">
-                                    <div className="card-image waves-effect waves-block waves-light">
-                                        <img alt="Screenshot of Homemoneycal web app" src="images/Homemoneycal_3.png" className="activator"></img>
-                                    </div>
-                                </div>
-                                <div className="col s6 m3">
-                                    <div className="card-image waves-effect waves-block waves-light">
-                                        <img alt="Screenshot of Homemoneycal web app" src="images/Homemoneycal_4.png" className="activator"></img>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                         <h6>Основные возможности и особенности</h6>
                         <ul>
                             <li>Адаптивный дизайн</li>
                             <li>Авторизация через Google, Facebook, по паролю</li>
-                            <li>Отправка письма на Email о регистрации</li>
-                            <li>Восстановление забытого пароля через Email</li>
+                            <li>Отправка письма с сообщением от формы обратной связи на Email</li>
                         </ul>
                         <h6 >Основные технологии, библиотеки</h6>
                         <ul className="border-bottom">
@@ -246,60 +224,28 @@ export const ExperienceProgects = () => {
                                 <table className="striped ">
                                     <tbody>
                                         <tr>
+                                            <td>config</td>
+                                            <td>библиотека конфигурационных данных</td>
+                                        </tr>
+                                        <tr>
+                                            <td>react-scroll</td>
+                                            <td>библиотека удобного скроллинга по ссылкам</td>
+                                        </tr>
+                                        <tr>
                                             <td>express-validator</td>
                                             <td>валидация форм</td>
-                                        </tr>
-                                        <tr>
-                                            <td>winston</td>
-                                            <td>логирование</td>
-                                        </tr>
-                                        <tr>
-                                            <td>helmet</td>
-                                            <td>защита приложений express через различные заголовки HTTP</td>
                                         </tr>
                                         <tr>
                                             <td>nodemailer</td>
                                             <td>отправка почты</td>
                                         </tr>
                                         <tr>
-                                            <td>csurf</td>
-                                            <td>для защиты сеансов сессии от подделки- взлома</td>
-                                        </tr>
-                                        <tr>
-                                            <td>connect-mongodb-session</td>
-                                            <td>для хранения сеансов в MongoDB</td>
-                                        </tr>
-                                        <tr>
-                                            <td>bcrypt</td>
-                                            <td>хеширования паролей</td>
-                                        </tr>
-                                        <tr>
-                                            <td>crypto</td>
-                                            <td>хеширования строки для изменения забытого пароля</td>
-                                        </tr>
-                                        <tr>
-                                            <td>connect-flash</td>
-                                            <td>для хранения и передачи сообщений</td>
-                                        </tr>
-                                        <tr>
-                                            <td>moment-timezone</td>
-                                            <td>поддержка часовых поясов IANA для Moment.js</td>
-                                        </tr>
-                                        <tr>
                                             <td>nodemon</td>
                                             <td>автоматического перезапуска проекта при изменении файлов проекта в dev</td>
                                         </tr>
                                         <tr>
-                                            <td>underscore</td>
-                                            <td>библиотека функций. Использую для проверки на корректную дату _.isDate(date)</td>
-                                        </tr>
-                                        <tr>
                                             <td>fontawesomecom</td>
                                             <td>иконки</td>
-                                        </tr>
-                                        <tr>
-                                            <td>chart.js</td>
-                                            <td>диаграммы</td>
                                         </tr>
 
                                     </tbody>
