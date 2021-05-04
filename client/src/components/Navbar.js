@@ -55,38 +55,49 @@ export const Navbar = () => {
             </div>
 
             <ul id="slide-out" className="sidenav">
-                <li><Link activeClass="active" className="sidenav-close intro-mobile" to="intro" spy={true} smooth={true} duration={500} offset={-56}> <center> Siniakou Alex </center></Link></li>
-                <li><Link activeClass="active" className="sidenav-close " to="Contact" spy={true} smooth={true} duration={500} offset={-56}><i className="fas fa-envelope-open fa-fw fa-2x  brown-text text-darken-1" ></i>Контакты</Link></li>
-                <li><Link activeClass="active" className="sidenav-close " to="About" spy={true} smooth={true} duration={500} offset={-56}><i className="fas fa-user fa-fw fa-2x green-text text-lighten-1" ></i>Обо мне</Link></li>
-                <li><Link activeClass="active" className="sidenav-close" to="ExperienceProgects" spy={true} smooth={true} duration={500} offset={-56}><i className="fas fa-code fa-fw fa-2x  cyan-text text-darken-1" ></i>Опыт и проекты</Link></li>
-                <li><Link activeClass="active" className="sidenav-close" to="Skills" spy={true} smooth={true} duration={500} offset={-56}><i className="fas fa-chart-bar fa-fw fa-2x pink-text text-lighten-1" ></i>Навыки и умения</Link></li>
-                <li><Link activeClass="active" className="sidenav-close" to="Education" spy={true} smooth={true} duration={500} offset={-56}><i className="fas fa-user-graduate fa-fw fa-2x orange-text text-lighten-2" ></i>Образование</Link></li>
-                <li><Link activeClass="active" className="sidenav-close" to="Resume" spy={true} smooth={true} duration={500} offset={-56}><i className="fa fa-file-text fa-fw fa-2x grey-text text-darken-2"></i>Резюме скачать</Link></li>
-                <li><Link activeClass="active" className="sidenav-close" to="WriteMe" spy={true} smooth={true} duration={500} offset={-56}><i className="fas fa-comment-dots fa-fw fa-2x red-text text-darken-3"></i>Напишите мне</Link></li>
+                <li><Link activeClass="active" className="sidenav-close intro-mobile" to="Intro" spy={true} smooth={true} duration={500} offset={-56}>
+                    <center >Siniakou Alex</center>
+                    <span className="brown-text light">Junior Node.js Back-end,</span>
+                    <span className="brown-text light">Full Stack Developer</span>
+
+                </Link></li>
+                <li><Link activeClass="active" className="sidenav-close " to="Contact" spy={true} smooth={true} duration={500} offset={-56}><i className="fas fa-envelope-open fa-fw fa-2x  brown-text text-darken-1" ></i>Contact</Link></li>
+                <li><Link activeClass="active" className="sidenav-close " to="About" spy={true} smooth={true} duration={500} offset={-56}><i className="fas fa-user fa-fw fa-2x green-text text-lighten-1" ></i>About</Link></li>
+                <li><Link activeClass="active" className="sidenav-close" to="Projects" spy={true} smooth={true} duration={500} offset={-56}><i className="fas fa-code fa-fw fa-2x  cyan-text text-darken-1" ></i>Projects</Link></li>
+                <li><Link activeClass="active" className="sidenav-close" to="Skills" spy={true} smooth={true} duration={500} offset={-56}><i className="fas fa-chart-bar fa-fw fa-2x pink-text text-lighten-1" ></i>Skills</Link></li>
+                <li><Link activeClass="active" className="sidenav-close" to="Education" spy={true} smooth={true} duration={500}
+                    offset={-56}><i className="fas fa-user-graduate fa-fw fa-2x orange-text text-lighten-2" ></i>Education</Link>
+                </li>
+                <li><Link activeClass="active" className="sidenav-close" to="Background" spy={true} smooth={true} duration={500}
+                    offset={-56}><i className="fas fa-user-cog fa-fw fa-2x purple-text text-lighten-2" ></i>Background</Link></li>
+                <li><Link activeClass="active" className="sidenav-close" to="Resume" spy={true} smooth={true} duration={500} offset={-56}><i className="fa fa-file-text fa-fw fa-2x grey-text text-darken-2"></i>Download resume</Link></li>
+                <li><Link activeClass="active" className="sidenav-close" to="WriteMe" spy={true} smooth={true} duration={500} offset={-56}><i className="fas fa-comment-dots fa-fw fa-2x red-text text-darken-3"></i>Write to me</Link></li>
             </ul>
 
 
 
-            <ul id="slide-out-left-fixed" className="sidenav sidenav-fixed">
-                <li><Link activeClass="active" className="intro" to="intro" spy={true} smooth={true} duration={500}  >
+            <ul id="slide-out-left-fixed" className="sidenav sidenav-fixed ">
+                <li><Link activeClass="active" className="intro" to="Intro" spy={true} smooth={true} duration={500}  >
                     <h4>Siniakou Alex</h4>
-                    <span className="brown-text light">Full Stack Developer</span> </Link></li>
+                    <span className="brown-text light">Junior Node.js Back-end,</span>
+                    <span className="brown-text light">Full Stack Developer</span>
+                </Link></li>
                 <li><Link activeClass="active" className="side-bg-color" to="Contact" spy={true} smooth={true} duration={500} >
-                    <i className="fas fa-envelope-open fa-fw fa-2x  brown-text text-darken-1" ></i>Контакты</Link></li>
+                    <i className="fas fa-envelope-open fa-fw fa-2x  brown-text text-darken-1" ></i>Contact</Link></li>
                 <li><Link activeClass="active" className="side-bg-color" to="About" spy={true} smooth={true} duration={500} >
-                    <i className="fas fa-user fa-fw fa-2x green-text text-lighten-1" ></i>Обо мне</Link></li>
-                <li><Link activeClass="active" className="side-bg-color " to="ExperienceProgects" spy={true} smooth={true} duration={500} >
-                    <i className="fas fa-code fa-fw fa-2x  cyan-text text-darken-1" ></i> Опыт и проекты</Link></li>
+                    <i className="fas fa-user fa-fw fa-2x green-text text-lighten-1" ></i>About</Link></li>
+                <li><Link activeClass="active" className="side-bg-color " to="Projects" spy={true} smooth={true} duration={500} ><i className="fas fa-code fa-fw fa-2x  cyan-text text-darken-1" ></i> Projects</Link></li>
                 <li><Link activeClass="active" className="side-bg-color" to="Skills" spy={true} smooth={true} duration={500} >
-                    <i className="fas fa-chart-bar fa-fw fa-2x pink-text text-lighten-1" ></i>Навыки и умения</Link></li>
+                    <i className="fas fa-chart-bar fa-fw fa-2x pink-text text-lighten-1" ></i>Skills</Link></li>
                 <li><Link activeClass="active" className="side-bg-color" to="Education" spy={true} smooth={true} duration={500} >
-                    <i className="fas fa-user-graduate fa-fw fa-2x orange-text text-lighten-2" ></i>Образование</Link></li>
+                    <i className="fas fa-user-graduate fa-fw fa-2x orange-text text-lighten-2" ></i>Education</Link></li>
+                <li><Link activeClass="active" className="side-bg-color" to="Background" spy={true} smooth={true} duration={500}>
+                    <i className="fas fa-user-cog fa-fw fa-2x purple-text text-lighten-2" ></i>Background</Link></li>
                 <li><Link activeClass="active" className="side-bg-color" to="Resume" spy={true} smooth={true} duration={500} >
-                    <i className="fa fa-file-text fa-fw fa-2x grey-text text-darken-2"></i>Резюме скачать</Link></li>
+                    <i className="fa fa-file-text fa-fw fa-2x grey-text text-darken-2"></i>Download resume</Link></li>
                 <li><Link activeClass="active" className="side-bg-color  " to="WriteMe" spy={true} smooth={true} duration={500} >
-                    <i className="fas fa-comment-dots fa-fw fa-2x red-text text-darken-3"></i>Напишите мне</Link></li>
+                    <i className="fas fa-comment-dots fa-fw fa-2x red-text text-darken-3"></i>Write to me</Link></li>
             </ul >
-
 
         </>
     )

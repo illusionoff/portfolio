@@ -16,7 +16,7 @@ export const Education = () => {
                             <div className="card-content">
                                 <p>
                                     <span className="card-title">
-                                        <a href="https://www.psu.by" className="teal-text hoverline">Полоцкий государственный университет</a>
+                                        <a target="_blank" rel="noreferrer" href="https://www.psu.by" className="teal-text hoverline">Полоцкий государственный университет 2005-2010 г.</a>
                                     </span>
                                 </p>
                                 <p className="grey-text">Беларусь, Новополоцк </p>
@@ -35,7 +35,7 @@ export const Education = () => {
                             <div className="card-content">
                                 <p>
                                     <span className="card-title">
-                                        <a href="https://www.vgpt.vitebsk.by" className="teal-text hoverline">Витебский государственный политехнический колледж</a>
+                                        <a target="_blank" rel="noreferrer" href="https://www.vgpt.vitebsk.by" className="teal-text hoverline">Витебский государственный политехнический колледж 2001-2005 г.</a>
                                     </span>
                                 </p>
                                 <p className="grey-text">Беларусь, Витебск </p>

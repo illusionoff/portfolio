@@ -4,12 +4,13 @@ import { Navbar } from './components/Navbar';
 import { Intro } from './components/Intro';
 import { Contact } from './components/Contact';
 import { About } from './components/About';
-import { ExperienceProgects } from './components/ExperienceProgects';
+import { Projects } from './components/Projects';
 // import { Projects } from './components/Projects';
 import { Skills } from './components/Skills';
 import { Education } from './components/Education';
 import { Resume } from './components/Resume';
 import { WriteMe } from './components/WriteMe';
+import { Background } from './components/Background';
 // import './App.css';
 import 'materialize-css';
 
@@ -24,7 +25,7 @@ function App() {
           <Navbar />
         </section >
 
-        <section id="intro">
+        <section id="Intro">
           <Intro />
         </section >
 
@@ -36,13 +37,9 @@ function App() {
           <About />
         </section >
 
-        <section id="ExperienceProgects">
-          <ExperienceProgects />
-        </section >
-
-        {/* <section id="Projects">
+        <section id="Projects">
           <Projects />
-        </section > */}
+        </section >
 
         <section id="Skills">
           <Skills />
@@ -50,6 +47,10 @@ function App() {
 
         <section id="Education">
           <Education />
+        </section >
+
+        <section id="Background">
+          <Background />
         </section >
 
         <section id="Resume">

@@ -61,7 +61,8 @@ router.post('/',
         }
       }
       res.status(201).json({ message: 'Сообщение доставлено' });
-      await RegisterSendMail(transporter, config.get('EMAIL_TO'), name, message);
+      await RegisterSendMail(transporter, config.get('EMAIL_TO')[0], name, message);
+      await RegisterSendMail(transporter, config.get('EMAIL_TO')[1], name, message);
     } catch (err) {
       // Упростить вывод ошибок при подготовке  prodaction ( лишняя информация для пользователя)
       console.error(`Error while getting quotes `, err.message);
