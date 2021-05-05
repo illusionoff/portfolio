@@ -44,7 +44,7 @@ export const Navbar = () => {
         <>
             <div className="navbar-fixed">
                 <nav>
-                    <div className="nav-wrapper cyan darken-1 sidenav-mymobile" style={{ padding: '0 2rem' }}>
+                    <div className="nav-wrapper cyan darken-1">
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a href="#" className="brand-logo">Siniakou Alex</a>
                         {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

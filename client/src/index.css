@@ -49,7 +49,7 @@ main {
     line-height: 56px !important;
   } 
 
-  #ExperienceProgects .col.s12.m10.link.text {
+  #Projectss .col.s12.m10.link.text {
     text-align: left;
   }
 
@@ -119,14 +119,14 @@ main {
   margin-top: 2rem;
   text-transform: uppercase;
 }
-#ExperienceProgects .card-action {
+#Projects .card-action {
   background-color: rgba(0, 0, 0, 0.02);
   border: none;
 }
-/* #ExperienceProgects .card .col.s12.m2 a {
+/* #Projects .card .col.s12.m2 a {
   display: block;
 } */
-#ExperienceProgects .card .col.s12.m2 a img {
+#Projects .card .col.s12.m2 a img {
   max-height: 60px;
 }
 .card-action span {
@@ -189,7 +189,7 @@ a.hoverline:hover {
   margin: 0;
   padding: 30px 0;
 }
-#ExperienceProgects .card-content .row {
+#Projects .card-content .row {
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
 }
@@ -204,7 +204,7 @@ a.hoverline:hover {
   margin-bottom: 0;
 }
 
-/* #ExperienceProgects .col.s12.m2 {
+/* #Projects .col.s12.m2 {
   text-align: center;
 } */
 
@@ -233,8 +233,8 @@ a.hoverline:hover {
 
 }
 
-@media (min-width: 1200px) {
-  #ExperienceProgects .container {
+@media  (min-width: 1200px) {
+  #Projects .container {
       width: 860px;
   }
 
@@ -326,7 +326,9 @@ a.hoverline:hover {
   nav .brand-logo {
     font-size: 28px;
   }
-
+  /* nav .nav-wrapper {
+    padding: 0 2rem;
+  } */
 
   #Contact a:not(.btn-floating) {
     left: 20px;
@@ -349,18 +351,18 @@ a.hoverline:hover {
     margin: 0 auto;
 }
  /* line-height: 55.5px; */
- #ExperienceProgects table.striped>tbody>tr>td {
+ #Projects table.striped>tbody>tr>td {
   font-size: 14px;
 }
 
-#ExperienceProgects .col.s12.m2.link, #ExperienceProgects .col.s12.m10.link {
+#Projects .col.s12.m2.link, #Projects .col.s12.m10.link {
   /* margin-top: 16px; */
   /* margin-left: 38px; */
   /* text-align: center; */
   font-size: 12px;
 }
 
-#ExperienceProgects .card-title {
+#Projects .card-title {
   text-align: center;
   }
 
@@ -371,24 +373,24 @@ a.hoverline:hover {
   padding-bottom: 12px;
 }
 
-/* #ExperienceProgects .col.s12.m4.link {
+/* #Projects .col.s12.m4.link {
   margin-right: 16px;
   margin-left: 38px;
 } */
 
-#ExperienceProgects .col.s12.m2.link, #ExperienceProgects .col.s12.m10.link {
+#Projects .col.s12.m2.link, #Projects .col.s12.m10.link {
   text-align: center;
 }
 
-#ExperienceProgects .col.s12.m10.link.text {
+#Projects .col.s12.m10.link.text {
   margin-top: 12px;
 }
 
-#ExperienceProgects .linksName {
+#Projects .linksName {
   margin-bottom: 24px;
 }
 
-#ExperienceProgects table.striped>tbody>tr>td {
+#Projects table.striped>tbody>tr>td {
   padding: 5px 5px;
 }
 
