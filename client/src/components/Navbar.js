@@ -70,7 +70,7 @@ export const Navbar = () => {
                 </li>
                 <li><Link activeClass="active" className="sidenav-close" to="Background" spy={true} smooth={true} duration={500}
                     offset={-56}><i className="fas fa-user-cog fa-fw fa-2x purple-text text-lighten-2" ></i>Background</Link></li>
-                <li><Link activeClass="active" className="sidenav-close" to="Resume" spy={true} smooth={true} duration={500} offset={-56}><i className="fa fa-file-text fa-fw fa-2x grey-text text-darken-2"></i>Download resume</Link></li>
+                <li><Link activeClass="active" className="sidenav-close" to="Resume" spy={true} smooth={true} duration={500} offset={-56}><i className="fa fa-file-pdf fa-fw fa-2x grey-text text-darken-2"></i>Download resume</Link></li>
                 <li><Link activeClass="active" className="sidenav-close" to="WriteMe" spy={true} smooth={true} duration={500} offset={-56}><i className="fas fa-comment-dots fa-fw fa-2x red-text text-darken-3"></i>Write to me</Link></li>
             </ul>
 
@@ -94,7 +94,7 @@ export const Navbar = () => {
                 <li><Link activeClass="active" className="side-bg-color" to="Background" spy={true} smooth={true} duration={500}>
                     <i className="fas fa-user-cog fa-fw fa-2x purple-text text-lighten-2" ></i>Background</Link></li>
                 <li><Link activeClass="active" className="side-bg-color" to="Resume" spy={true} smooth={true} duration={500} >
-                    <i className="fa fa-file-text fa-fw fa-2x grey-text text-darken-2"></i>Download resume</Link></li>
+                    <i className="fa fa-file-pdf fa-fw fa-2x grey-text text-darken-2"></i>Download resume</Link></li>
                 <li><Link activeClass="active" className="side-bg-color  " to="WriteMe" spy={true} smooth={true} duration={500} >
                     <i className="fas fa-comment-dots fa-fw fa-2x red-text text-darken-3"></i>Write to me</Link></li>
             </ul >
