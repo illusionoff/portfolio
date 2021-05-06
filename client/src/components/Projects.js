@@ -16,7 +16,7 @@ export const Projects = () => {
 
     return (
         <>
-            <h3 className="page-title white-text">Progects</h3>
+            <h3 className="page-title white-text">Projects</h3>
             <div className="container">
                 <div className="card">
                     <div className="card-content">

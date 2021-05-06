@@ -49,7 +49,7 @@ main {
     line-height: 56px !important;
   } 
 
-  #Projectss .col.s12.m10.link.text {
+  #Projects .col.s12.m10.link.text {
     text-align: left;
   }
 
@@ -315,6 +315,7 @@ a.hoverline:hover {
   .sidenav li>a.intro-mobile {
     /* padding-left: 40px; */
     /* line-height: 2; */
+    color: #00acc1;
     font-style: italic;
     font-size: 22px;
     padding-bottom: 86px;
@@ -365,6 +366,7 @@ a.hoverline:hover {
 #Projects .card-title {
   text-align: center;
   }
+
 
 }
 

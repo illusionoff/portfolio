@@ -35,7 +35,7 @@ export const WriteMe = () => {
     return (
         <>
             <div>
-                <h3 className="page-title white-text">Write me</h3>
+                <h3 className="page-title white-text">Write to me</h3>
                 <div className="container">
                     <div className="card  blue darken-1 black-text">
                         <div className="card-content white-text">
