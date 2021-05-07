@@ -4,7 +4,7 @@
   "description": "portfolio nodejs react postrgesql",
   "main": "app.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=prodaction node app.js",
+    "start": "cross-env NODE_ENV=production node app.js",
     "server": "nodemon app.js",
     "client": "npm run start --prefix client",
     "dev1": "concurrently \"npm run server\" \"npm run client\"",
