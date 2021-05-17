@@ -48,9 +48,6 @@ export const Background = () => {
                 </ul>
               </div>
             </div>
-
-
-
           </div>
         </div>
       </div>

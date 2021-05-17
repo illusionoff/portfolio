@@ -5,6 +5,7 @@ const { check, validationResult, body } = require('express-validator'); // body 
 const nodemailer = require("nodemailer");
 const regEmail = require("../mail/message");
 const config = require('config');
+const fetch = require('node-fetch');
 
 /* GET quotes listing. */
 // '/api/message'
@@ -41,7 +42,8 @@ router.post('/',
         })
       }
 
-      const { name, message } = req.body
+      const { name } = req.body
+      let { message } = req.body
       console.log('routerMessage name', name);
       console.log('routerMessage name', message);
       const response = await quotes.getMultiple(name, message);
@@ -61,6 +63,22 @@ router.post('/',
         }
       }
       res.status(201).json({ message: 'Сообщение доставлено' });
+
+      //https://app.sms.by/api/v1/sendQuickSMS?token=6aa7a07f3&message=Test%20SMS13nodejs&phone=%2B375299999999
+      let nameSMS = name;
+      if (nameSMS.length > 10) { nameSMS = name.substring(0, 10) }
+      let messageSMS = message;
+      if (messageSMS.length > 30) { messageSMS = message.substring(0, 30) }
+      const urlSMS = `https://app.sms.by/api/v1/sendQuickSMS?token=${config.get('configSMS').token}&message=name:${nameSMS}:message:${messageSMS}&phone=${config.get('configSMS').phone}`; // http://www.mysite.ru/index.php
+      let responseSMS = await fetch(urlSMS)
+      if (!responseSMS.ok) {
+        // throw new Error(responseSMS.status); // 404
+        console.log('responseSMS.status', responseSMS.status);
+        message = 'SMS:err ' + message;
+      }
+      let result = await responseSMS.json();
+      console.log('SMS:', result);
+
       await RegisterSendMail(transporter, config.get('EMAIL_TO')[0], name, message);
       await RegisterSendMail(transporter, config.get('EMAIL_TO')[1], name, message);
     } catch (err) {
