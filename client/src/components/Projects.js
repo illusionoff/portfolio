@@ -77,11 +77,12 @@ export const Projects = () => {
             </ul>
             <h6 >Основные технологии, библиотеки</h6>
             <ul className="border-bottom">
-              <li>Nodejs, Express, npm, handlebars, REST API </li>
+              <li>Nodejs, Express, npm, REST API </li>
               <li>MongoDB, mongoose</li>
-              <li>materializecss</li>
+              <li>materializecss, handlebars</li>
               <li>Nginx, pm2</li>
-              <li>passport.js, mocha, eslint, prettier  </li>
+              <li>passport.js, mocha</li>
+              <li>eslint, prettier  </li>
             </ul>
             <div className="spravca">
               <input type="checkbox" id="hd-1" className="reference" />

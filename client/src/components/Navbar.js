@@ -57,8 +57,8 @@ export const Navbar = () => {
       <ul id="slide-out" className="sidenav">
         <li><Link activeClass="active" className="sidenav-close intro-mobile" to="Intro" spy={true} smooth={true} duration={500} offset={-54}>
           <center >Siniakou Alex</center>
-          <span className="brown-text light">Junior Node.js Back-end,</span>
-          <span className="brown-text light">Full Stack Developer</span>
+          <span className="brown-text light strong">Junior Node.js Back-end,</span>
+          <span className="brown-text light">Full Stack Node.js Developer</span>
 
         </Link></li>
         <li><Link activeClass="active" className="sidenav-close " to="Contact" spy={true} smooth={true} duration={500} offset={-54}><i className="fas fa-envelope-open fa-fw fa-2x  brown-text text-darken-1" ></i>Contact</Link></li>
@@ -79,8 +79,8 @@ export const Navbar = () => {
       <ul id="slide-out-left-fixed" className="sidenav sidenav-fixed ">
         <li><Link activeClass="active" className="intro" to="Intro" spy={true} smooth={true} duration={500}  >
           <h4>Siniakou Alex</h4>
-          <span className="brown-text light">Junior Node.js Back-end,</span>
-          <span className="brown-text light">Full Stack Developer</span>
+          <span className="brown-text light strong">Junior Node.js Back-end,</span>
+          <span className="brown-text light">Full Stack Node.js Developer</span>
         </Link></li>
         <li><Link activeClass="active" className="side-bg-color" to="Contact" spy={true} smooth={true} duration={500} >
           <i className="fas fa-envelope-open fa-fw fa-2x  brown-text text-darken-1" ></i>Contact</Link></li>

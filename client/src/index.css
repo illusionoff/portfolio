@@ -11,7 +11,7 @@ html {
     font-size: 16px;
 }
 main {
-    padding-left: 240px;
+    padding-left: 266px;
     background: url(font.png) repeat;
     /* padding-top: -64px; */
     margin-top: -64px;
@@ -47,7 +47,7 @@ main {
      nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i  {
     height: 56px !important;
     line-height: 56px !important;
-  } 
+  }
 
   #Projects .col.s12.m10.link.text {
     text-align: left;
@@ -253,7 +253,7 @@ a.hoverline:hover {
       /* background-color: LightGrey !important; */
 
   .sidenav {
-    width: 240px;
+    width: 266px;
     background-color: #e0f2f1 ;
   }
   .sidenav li>a.intro {
@@ -295,17 +295,22 @@ a.hoverline:hover {
     display: block;
 
     padding: 0px 0px 0px 12px ;
-    font-style: italic;
     line-height: 1.25;
   }
 
   .sidenav li>a.intro-mobile>span {
     font-style: italic;
+
     display: block;
     font-size: 14px;
     padding: 0px 0px 0px 20px ;
-    font-style: italic;
     line-height: 1;
+  }
+
+  .strong {
+
+    font-weight: 600;
+
   }
 
   .sidenav li>a.side-bg-color.active {
@@ -346,7 +351,7 @@ a.hoverline:hover {
   }
 
   #Contact a.btn-floating.btn-large {
-   
+
     display: block;
     text-align: center;
     margin: 0 auto;
