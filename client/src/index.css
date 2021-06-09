@@ -44,7 +44,7 @@ main {
 
 @media only screen and (min-width : 601px) {
 
-     nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i  {
+     nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i, .navbar-fixed  {
     height: 56px !important;
     line-height: 56px !important;
   }
@@ -57,6 +57,12 @@ main {
     padding-bottom: 30px;
   }
 
+  #Intro .container h5 {
+    font-size: 32px;
+    line-height: 200%;
+    margin: 30px 0 0;
+  }
+
  }
 
   @media only screen and (min-width : 992px) {
@@ -65,9 +71,9 @@ main {
     display: none;
   }
 
-  .navbar-fixed {
+  /* .navbar-fixed {
     visibility: hidden;
-   }
+   } */
 
    .card .card-project .card-image {
     /* height: 75%;
@@ -75,6 +81,7 @@ main {
     border: 1px solid #ddd;
     margin-top: 24px;
   }
+
  }
 
 
@@ -231,6 +238,14 @@ a.hoverline:hover {
    top: initial;
  }
 
+ section#Intro {
+  background-position-x: 62%;
+}
+
+  /* main {
+    margin-top: -40px;
+  } */
+
 }
 
 @media  (min-width: 1200px) {
@@ -372,6 +387,9 @@ a.hoverline:hover {
   text-align: center;
   }
 
+section#Intro {
+    background-position-x: 55%;
+  }
 
 }
 
@@ -520,3 +538,37 @@ blockquote {
 div.waves-effect .waves-ripple {
 top: 50px;
 }
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+ #Intro  {
+  background: url(cssImages/siniakoualex1600X992.jpg) no-repeat top center/cover;
+  /* background-image: url(cssImages/siniakoualex1600X992.jpg); */
+  position: relative;
+  height: 100vh;
+}
+#Intro .container {
+  color: white;
+    font-weight: 200;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/* #Intro .container p {
+  font-size: 20px;
+  color: white;
+    font-weight: 200;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+} */
