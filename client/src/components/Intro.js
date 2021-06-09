@@ -9,7 +9,7 @@ export const Intro = () => {
       <div class="overlay"></div>
       <div className="container">
 
-        <h5>Junior Node.js Back-end, Full Stack Node.js Developer</h5>
+        <h5 ><span className="strong nowrap">Junior Node.js Back-end,</span> Full Stack Node.js Developer</h5>
 
         <p>Я получаю удовольствие и страсть от возможности создания
                      и возможности приносить пользу</p>

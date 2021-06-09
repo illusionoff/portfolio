@@ -563,6 +563,10 @@ top: 50px;
     width: 100%;
 }
 
+#Intro .container .nowrap {
+  white-space: nowrap;
+}
+
 /* #Intro .container p {
   font-size: 20px;
   color: white;
