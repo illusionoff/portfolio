@@ -7,6 +7,7 @@ const regEmail = require("../mail/message");
 const config = require('config');
 const fetch = require('node-fetch');
 
+
 /* GET quotes listing. */
 // '/api/message'
 // Заменить после на POST
@@ -14,12 +15,12 @@ router.post('/',
   [
     // check('name', 'Вы ввели имя меньше двух символов или более 30 символов')
     body('name')
-      // .notEmpty() 
+      // .notEmpty()
       // .withMessage("поле пустое")
       .isLength({ min: 3, max: 30 }) // .isEmpty() работает наоборот если не пусто то вызывает ошибку
       .withMessage("Вы ввели имя меньше трех символов или более 30 символов")
       .custom((value) => {
-        // let regexp = /^[a-z0-9_-]{3,16}$/; // проверка 
+        // let regexp = /^[a-z0-9_-]{3,16}$/; // проверка
         // const regexp = /^([а-яё]+|[a-z0-9_-]){3,16}$/; // проверка  на name русские и латинские символы
         // const regexp = /^([а-яё]+|[a-z0-9_-]){3,30}$/; // проверка  на name русские и латинские символы
         // const regexp = /^([а-яё]+|[a-zA-Z-9_-]){3,30}$/; // проверка  на name русские и латинские символы
@@ -69,8 +70,8 @@ router.post('/',
       if (nameSMS.length > 10) { nameSMS = name.substring(0, 10) }
       let messageSMS = message;
       if (messageSMS.length > 30) { messageSMS = message.substring(0, 30) }
-      const urlSMS = `https://app.sms.by/api/v1/sendQuickSMS?token=${config.get('configSMS').token}&message=name:${nameSMS}:message:${messageSMS}&phone=${config.get('configSMS').phone}`; // http://www.mysite.ru/index.php
-      let responseSMS = await fetch(urlSMS)
+      const urlSMS = `https://app.sms.by/api/v1/sendQuickSMS?token=${config.get('configSMS').token}&message=name:${encodeURIComponent(nameSMS)}:message:${encodeURIComponent(messageSMS)}&phone=${config.get('configSMS').phone}`; // http://www.mysite.ru/index.php
+      let responseSMS = await fetch(urlSMS);
       if (!responseSMS.ok) {
         // throw new Error(responseSMS.status); // 404
         console.log('responseSMS.status', responseSMS.status);
