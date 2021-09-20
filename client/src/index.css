@@ -272,9 +272,9 @@ a.hoverline:hover {
     background-color: #e0f2f1 ;
   }
   .sidenav li>a.intro {
-    height: 136px;
+    height: 146px;
     border-bottom: 1px solid #ddd;
-    background-color: #fafafa;
+    background-color: #e0f2f1;
     /* margin-top: 0px; */
   }
 
@@ -338,7 +338,7 @@ a.hoverline:hover {
     color: #00acc1;
     font-style: italic;
     font-size: 22px;
-    padding-bottom: 86px;
+    padding-bottom: 96px;
     border-bottom: 2px solid #ddd;
   }
 
