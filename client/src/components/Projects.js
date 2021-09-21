@@ -25,11 +25,8 @@ export const Projects = () => {
               <div className="col s12 m10">
                 <p>
                   <span className="card-title ">
-                    Разработка Pet проекта
-                                        {/* проекта HomeMoneyCalc */}
-                    {/* Back-end nodejs express  */}
+                    Разработка проекта
                   </span>
-
                 </p>
               </div>
             </div>
