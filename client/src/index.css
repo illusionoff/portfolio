@@ -383,6 +383,7 @@ a.hoverline:hover {
   font-size: 12px;
 }
 
+
 #Projects .card-title {
   text-align: center;
   }
@@ -393,6 +394,13 @@ section#Intro {
 
 }
 
+
+@media (max-width: 400px) {
+  #Projects .col.s12.m10.link.calcnew {
+    font-size: 11px;
+    padding: 0rem;
+  }
+}
 .border-bottom {
   border-bottom: 1px solid #ddd;
   padding-bottom: 12px;

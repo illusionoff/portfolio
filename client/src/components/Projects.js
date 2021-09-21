@@ -170,7 +170,7 @@ export const Projects = () => {
                   <i className="fa fa-github-square fa-fw" ></i>
                 </a>
               </div>
-              <div className="col s12 m10 link text">
+              <div className="col s12 m10 link text calcnew">
                 <a target="_blank" rel="noreferrer" href="https://github.com/illusionoff/homemoneycalcnew" className="hoverline">https://github.com/illusionoff/homemoneycalcnew</a>
               </div>
             </div>
