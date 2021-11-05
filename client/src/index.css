@@ -131,6 +131,10 @@ main {
   background-color: rgba(0, 0, 0, 0.02);
   border: none;
 }
+
+#Projects .col.s12.m10.link.text.text-newline {
+  word-break: break-all;
+}
 /* #Projects .card .col.s12.m2 a {
   display: block;
 } */

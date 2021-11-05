@@ -25,7 +25,7 @@ export const Projects = () => {
               <div className="col s12 m10">
                 <p>
                   <span className="card-title ">
-                    Разработка проекта
+                    Разработка проекта HomeMoneyCalc
                   </span>
                 </p>
               </div>
@@ -264,6 +264,144 @@ export const Projects = () => {
             </div>
           </div>
         </div>
+
+
+
+
+        <div className="card">
+          <div className="card-content">
+            <div className="row">
+              <div className="col s12 m2">
+                <a href="http://criptoarbitr.178.20.42.150.sslip.io/" target="_blanc" >
+                  <img alt="CriptoArbitr logo" src="http://criptoarbitr.178.20.42.150.sslip.io//favicon.png" className="responsive-img center-block"></img>
+                </a>
+              </div>
+              <div className="col s12 m10">
+                <p>
+                  <span className="card-title ">
+                    Разработка проекта CriptoArbitr
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div className="role">Full Stack</div>
+            <p>
+              <em className="gray-text">
+                <a href="https://178.20.42.150.sslip.io" target="_blanc" >CriptoArbitr </a>
+                Исседование возможности извлечения прибыли на разнице курсов между двумя криптобиржами (межбиржевой арбитраж).</em>
+            </p>
+            <div className="card-project">
+              <div className="row">
+                <div className="col s6 m3">
+                  <div className="card-image waves-effect waves-block waves-light">
+                    <img alt="Screenshot of CriptoArbitr web app" src="images/criptoarbitr_1.png" className="activator"></img>
+                  </div>
+                </div>
+                <div className="col s6 m3">
+                  <div className="card-image waves-effect waves-block waves-light">
+                    <img alt="Screenshot of CriptoArbitr web app" src="images/criptoarbitr_2.png" className="activator"></img>
+                  </div>
+                </div>
+                <div className="col s12 m6">
+                  <div className="card-image waves-effect waves-block waves-light">
+                    <img alt="Screenshot of CriptoArbitr web app" src="images/criptoarbitr_3.png" className="activator"></img>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <h6>Основные функции сервиса</h6>
+            <ul>
+              <li>Получение данных котировок в реальном времени по спотовому рынку выбранной криптовалюты с бирж Gate.io и Bithamb.pro</li>
+              <li>Получение данных по комиссиям криптобиржи   Bithamb.pro запись данных в .csv файл о котировках, дополнительных параметрах</li>
+              <li>Активация записи данных в .csv файл по заданному значению необходимой прибыли  и выбор направления торговли</li>
+              <li>Сбор статитстики и анализ скорости поступления сигналов с биржи Bithamb.pro</li>
+              <li>Загрузка актуальных файлов для визуализации с каталога запущенного проекта</li>
+              <li>Визуализация данных в виде диаграмм</li>
+              <li>Адаптивный дизайн</li>
+            </ul>
+            <h6 >Основные технологии, библиотеки</h6>
+            <ul className="border-bottom">
+              <li>Nodejs, Express, npm, REST API </li>
+              <li>React, materializecss, react-chartjs-2</li>
+              <li>Nginx, pm2</li>
+              <li>ws, reconnecting-websocket</li>
+              <li>mocha</li>
+              <li>eslint</li>
+            </ul>
+            <div className="spravca">
+              <input type="checkbox" id="hd-3" className="reference" />
+              <h6>Дополнительные технологии, библиотеки</h6>
+              <label htmlFor="hd-3" ><span>Показать / Скрыть</span></label>
+              <span className="story">
+                <table className="striped ">
+                  <tbody>
+                    <tr>
+                      <td>config</td>
+                      <td>библиотека конфигурационных данных</td>
+                    </tr>
+                    <tr>
+                      <td>csv-parse</td>
+                      <td>парсинг .csv файлов</td>
+                    </tr>
+                    <tr>
+                      <td>express-validator</td>
+                      <td>валидация форм</td>
+                    </tr>
+                    <tr>
+                      <td>kill-port</td>
+                      <td>уничтожение процесса на определенном порту</td>
+                    </tr>
+                    <tr>
+                      <td>node-fetch</td>
+                      <td>аналог window.fetchAPI для node.js</td>
+                    </tr>
+                    <tr>
+                      <td>concurrently</td>
+                      <td>одновременное выполнение нескольких команд, процессов</td>
+                    </tr>
+                    <tr>
+                      <td>cross-env</td>
+                      <td>использование переменных среды на разных платформах</td>
+                    </tr>
+                    <tr>
+                      <td>nodemon</td>
+                      <td>автоматического перезапуска проекта при изменении файлов проекта в dev</td>
+                    </tr>
+                    <tr>
+                      <td>chart.js</td>
+                      <td>конфигурирование диаграмм и вывод на canvas</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </span>
+            </div>
+
+            <h6 className="linksName">Ссылки на проект</h6>
+            <div className="row">
+              <div className="col s12 m2 link">
+                <a href="http://criptoarbitr.178.20.42.150.sslip.io/" target="_blanc" data-position="top" data-tooltip="CriptoArbitr" className="tooltipped">
+                  <img alt="CriptoArbitr logo" src="http://criptoarbitr.178.20.42.150.sslip.io//favicon.png" className="responsive-img center-block" width="56" height="56"></img>
+                </a>
+              </div>
+              <div className="col s12 m10 link text">
+                <a href="http://criptoarbitr.178.20.42.150.sslip.io/" target="_blanc" >Сайт проекта CriptoArbitr</a>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col s12 m2 link">
+                <a target="_blank" rel="noreferrer" href="https://github.com/illusionoff/reactcriptoarbitr_test_squeeze" data-position="top" data-tooltip="github" className="btn-floating btn-large waves-effect waves-light brown tooltipped">
+                  <i className="fa fa-github-square fa-fw" ></i>
+                </a>
+              </div>
+              <div className="col s12 m10 link text text-newline" >
+                <a target="_blank" rel="noreferrer" href="https://github.com/illusionoff/reactcriptoarbitr_test_squeeze" className="hoverline">https://github.com/illusionoff/reactcriptoarbitr_test_squeeze</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
       </div>
     </>
