@@ -264,16 +264,12 @@ export const Projects = () => {
             </div>
           </div>
         </div>
-
-
-
-
         <div className="card">
           <div className="card-content">
             <div className="row">
               <div className="col s12 m2">
                 <a href="http://criptoarbitr.178.20.42.150.sslip.io/" target="_blanc" >
-                  <img alt="CriptoArbitr logo" src="http://criptoarbitr.178.20.42.150.sslip.io//favicon.png" className="responsive-img center-block"></img>
+                  <img alt="CriptoArbitr logo" src="http://criptoarbitr.178.20.42.150.sslip.io/favicon.png" className="responsive-img center-block"></img>
                 </a>
               </div>
               <div className="col s12 m10">
@@ -287,7 +283,7 @@ export const Projects = () => {
             <div className="role">Full Stack</div>
             <p>
               <em className="gray-text">
-                <a href="https://178.20.42.150.sslip.io" target="_blanc" >CriptoArbitr </a>
+                <a href="http://criptoarbitr.178.20.42.150.sslip.io/" target="_blanc" >CriptoArbitr </a>
                 Исседование возможности извлечения прибыли на разнице курсов между двумя криптобиржами (межбиржевой арбитраж).</em>
             </p>
             <div className="card-project">
@@ -322,7 +318,7 @@ export const Projects = () => {
             </ul>
             <h6 >Основные технологии, библиотеки</h6>
             <ul className="border-bottom">
-              <li>Nodejs, Express, npm, REST API </li>
+              <li>Nodejs, Express, npm </li>
               <li>React, materializecss, react-chartjs-2</li>
               <li>Nginx, pm2</li>
               <li>ws, reconnecting-websocket</li>
@@ -382,7 +378,7 @@ export const Projects = () => {
             <div className="row">
               <div className="col s12 m2 link">
                 <a href="http://criptoarbitr.178.20.42.150.sslip.io/" target="_blanc" data-position="top" data-tooltip="CriptoArbitr" className="tooltipped">
-                  <img alt="CriptoArbitr logo" src="http://criptoarbitr.178.20.42.150.sslip.io//favicon.png" className="responsive-img center-block" width="56" height="56"></img>
+                  <img alt="CriptoArbitr logo" src="http://criptoarbitr.178.20.42.150.sslip.io/favicon.png" className="responsive-img center-block" width="56" height="56"></img>
                 </a>
               </div>
               <div className="col s12 m10 link text">
