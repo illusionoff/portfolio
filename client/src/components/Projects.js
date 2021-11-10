@@ -378,7 +378,7 @@ export const Projects = () => {
             <div className="row">
               <div className="col s12 m2 link">
                 <a href="http://criptoarbitr.178.20.42.150.sslip.io/" target="_blanc" data-position="top" data-tooltip="CriptoArbitr" className="tooltipped">
-                  <img alt="CriptoArbitr logo" src="http://criptoarbitr.178.20.42.150.sslip.io/favicon.png" className="responsive-img center-block" width="56" height="56"></img>
+                  <img alt="CriptoArbitr logo" src="images/favicon_criptoarbitr.png" className="responsive-img center-block" width="56" height="56"></img>
                 </a>
               </div>
               <div className="col s12 m10 link text">
