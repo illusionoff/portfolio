@@ -25,7 +25,7 @@ export const Projects = () => {
               <div className="col s12 m10">
                 <p>
                   <span className="card-title ">
-                    Разработка проекта HomeMoneyCalc
+                    Разработка HomeMoneyCalc
                   </span>
                 </p>
               </div>
@@ -275,7 +275,7 @@ export const Projects = () => {
               <div className="col s12 m10">
                 <p>
                   <span className="card-title ">
-                    Разработка проекта CriptoArbitr
+                    Разработка CriptoArbitr
                   </span>
                 </p>
               </div>
