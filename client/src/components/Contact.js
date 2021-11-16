@@ -23,7 +23,7 @@ export const Contact = () => {
           <a href="mailto:siniakoualiaksandr@gmail.com" data-position="top" data-tooltip="Email" className="btn-floating btn-large waves-effect waves-light brown tooltipped">
             <i className="fas fa-envelope-open fa-fw" ></i>
           </a>
-          <a href="mailto:siniakoualiaksandr@gmail.com" className="hoverline">siniakoualiaksandr@gmail.com</a>
+          <a href="mailto:siniakoualex@gmail.com" className="hoverline">siniakoualex@gmail.com</a>
         </p>
         <p>
           <a target="_blank" rel="noreferrer" href="https://github.com/illusionoff" data-position="top" data-tooltip="github" className="btn-floating btn-large waves-effect waves-light brown tooltipped">
