@@ -9,16 +9,6 @@ const fetch = require('node-fetch');
 
 const transporter = nodemailer.createTransport(config.get('GMAIL_SETTINGS'));
 
-async function RegisterSendMail(transporter, email, name, message) {
-  try {
-    await transporter.sendMail(regEmail(email, name, message));
-  } catch (e) {
-    console.log('RegisterSendMail email:', email);
-    console.log("ERROR await transporter.sendMail  catch (e):", e);
-    return res.status(400).json({ message: 'Что-то пошло не так email send catch (e):' });
-  }
-}
-
 /* GET quotes listing. */
 // '/api/message'
 // Заменить после на POST
@@ -79,20 +69,13 @@ router.post('/',
       let result = await responseSMS.json();
       console.log('SMS:', result);
 
-      // await RegisterSendMail(transporter, config.get('EMAIL_TO')[0], name, message);
-      // await RegisterSendMail(transporter, config.get('EMAIL_TO')[1], name, message);
       const promise1 = new Promise((resolve, reject) => {
-        RegisterSendMail(transporter, config.get('EMAIL_TO')[0], name, message);
-        // reject("Непредвиденная ошибка promise1");
-        // setTimeout(resolve, 500, "Hello");
-        // resolve();
-        reject("сообщение не доставлено");
+        transporter.sendMail(regEmail(config.get('EMAIL_TO')[0], name, message));
+        resolve();
       });
+
       const promise2 = new Promise((resolve, reject) => {
-        RegisterSendMail(transporter, config.get('EMAIL_TO')[1], name, message);
-        // console.log('test promice')
-        // setTimeout(resolve, 1000, "World");
-        // resolve('test promice2')
+        transporter.sendMail(regEmail(config.get('EMAIL_TO')[1], name, message));
         resolve();
       });
 
