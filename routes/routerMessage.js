@@ -7,6 +7,17 @@ const regEmail = require("../mail/message");
 const config = require('config');
 const fetch = require('node-fetch');
 
+const transporter = nodemailer.createTransport(config.get('GMAIL_SETTINGS'));
+
+async function RegisterSendMail(transporter, email, name, message) {
+  try {
+    await transporter.sendMail(regEmail(email, name, message));
+  } catch (e) {
+    console.log('RegisterSendMail email:', email);
+    console.log("ERROR await transporter.sendMail  catch (e):", e);
+    return res.status(400).json({ message: 'Что-то пошло не так email send catch (e):' });
+  }
+}
 
 /* GET quotes listing. */
 // '/api/message'
@@ -52,18 +63,6 @@ router.post('/',
       if (!response) {
         return res.status(400).json({ message: 'Что-то пошло не так response' });
       }
-      const transporter = nodemailer.createTransport(config.get('GMAIL_SETTINGS'));
-
-      async function RegisterSendMail(transporter, email, name, message) {
-        try {
-          await transporter.sendMail(regEmail(email, name, message));
-        } catch (e) {
-          console.log('RegisterSendMail email:', email);
-          console.log("ERROR await transporter.sendMail  catch (e):", e);
-          return res.status(400).json({ message: 'Что-то пошло не так email send catch (e):' });
-        }
-      }
-      res.status(201).json({ message: 'Сообщение доставлено' });
 
       //https://app.sms.by/api/v1/sendQuickSMS?token=6aa7a07f3&message=Test%20SMS13nodejs&phone=%2B375299999999
       let nameSMS = name;
@@ -82,6 +81,7 @@ router.post('/',
 
       await RegisterSendMail(transporter, config.get('EMAIL_TO')[0], name, message);
       await RegisterSendMail(transporter, config.get('EMAIL_TO')[1], name, message);
+      res.status(201).json({ message: 'Сообщение доставлено' });
     } catch (err) {
       // Упростить вывод ошибок при подготовке  prodaction ( лишняя информация для пользователя)
       console.error(`Error while getting quotes `, err.message);
