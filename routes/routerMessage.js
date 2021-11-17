@@ -79,11 +79,32 @@ router.post('/',
       let result = await responseSMS.json();
       console.log('SMS:', result);
 
-      await RegisterSendMail(transporter, config.get('EMAIL_TO')[0], name, message);
-      await RegisterSendMail(transporter, config.get('EMAIL_TO')[1], name, message);
+      // await RegisterSendMail(transporter, config.get('EMAIL_TO')[0], name, message);
+      // await RegisterSendMail(transporter, config.get('EMAIL_TO')[1], name, message);
+      const promise1 = new Promise((resolve, reject) => {
+        RegisterSendMail(transporter, config.get('EMAIL_TO')[0], name, message);
+        // reject("Непредвиденная ошибка promise1");
+        // setTimeout(resolve, 500, "Hello");
+        // resolve();
+        reject("сообщение не доставлено");
+      });
+      const promise2 = new Promise((resolve, reject) => {
+        RegisterSendMail(transporter, config.get('EMAIL_TO')[1], name, message);
+        // console.log('test promice')
+        // setTimeout(resolve, 1000, "World");
+        // resolve('test promice2')
+        resolve();
+      });
+
+      const [promise1data, promise2data] = await Promise.all([
+        promise1,
+        promise2,
+      ]);
+
       res.status(201).json({ message: 'Сообщение доставлено' });
     } catch (err) {
       // Упростить вывод ошибок при подготовке  prodaction ( лишняя информация для пользователя)
+      console.log('Error', err);
       console.error(`Error while getting quotes `, err.message);
       // res.status(err.statusCode || 500).json({ 'message': err.message || 'Что-то пошло не так, попробуйте снова' });
       res.status(500).json({ message: 'Что-то пошло не так, попробуйте снова' });
