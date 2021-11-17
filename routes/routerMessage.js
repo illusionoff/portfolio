@@ -9,12 +9,8 @@ const fetch = require('node-fetch');
 
 const transporter = nodemailer.createTransport(config.get('GMAIL_SETTINGS'));
 
-/* GET quotes listing. */
-// '/api/message'
-// Заменить после на POST
 router.post('/',
   [
-    // check('name', 'Вы ввели имя меньше двух символов или более 30 символов')
     body('name')
       // .notEmpty()
       // .withMessage("поле пустое")
