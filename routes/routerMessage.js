@@ -8,6 +8,8 @@ const config = require('config');
 const fetch = require('node-fetch');
 
 const transporter = nodemailer.createTransport(config.get('GMAIL_SETTINGS'));
+const EMAIL1 = config.get('EMAIL_TO')[0];
+const EMAIL2 = config.get('EMAIL_TO')[1];
 
 router.post('/',
   [
@@ -66,12 +68,12 @@ router.post('/',
       console.log('SMS:', result);
 
       const promise1 = new Promise((resolve, reject) => {
-        transporter.sendMail(regEmail(config.get('EMAIL_TO')[0], name, message));
+        transporter.sendMail(regEmail(EMAIL1, name, message));
         resolve();
       });
 
       const promise2 = new Promise((resolve, reject) => {
-        transporter.sendMail(regEmail(config.get('EMAIL_TO')[1], name, message));
+        transporter.sendMail(regEmail(EMAIL2, name, message));
         resolve();
       });
 
