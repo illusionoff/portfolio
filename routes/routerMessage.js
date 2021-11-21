@@ -67,26 +67,22 @@ router.post('/',
       let result = await responseSMS.json();
       console.log('SMS:', result);
 
-      const promise1 = new Promise((resolve, reject) => {
-        transporter.sendMail(regEmail(EMAIL1, name, message));
-        resolve();
-      });
-
-      const promise2 = new Promise((resolve, reject) => {
-        transporter.sendMail(regEmail(EMAIL2, name, message));
-        resolve();
-      });
+      const promise1 = transporter.sendMail(regEmail(EMAIL1, name, message));
+      const promise2 = transporter.sendMail(regEmail(EMAIL2, name, message));
 
       const [promise1data, promise2data] = await Promise.all([
         promise1,
         promise2,
-      ]);
+      ]).catch(err => {
+        err.message = err.message + 'error email send:';
+        throw err
+      });
 
       res.status(201).json({ message: 'Сообщение доставлено' });
     } catch (err) {
       // Упростить вывод ошибок при подготовке  prodaction ( лишняя информация для пользователя)
-      console.log('Error', err);
-      console.error(`Error while getting quotes `, err.message);
+      console.log('Error router', err);
+      console.error(`Error router message `, err.message);
       // res.status(err.statusCode || 500).json({ 'message': err.message || 'Что-то пошло не так, попробуйте снова' });
       res.status(500).json({ message: 'Что-то пошло не так, попробуйте снова' });
     }
