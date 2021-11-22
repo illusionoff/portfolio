@@ -74,7 +74,7 @@ router.post('/',
         promise1,
         promise2,
       ]).catch(err => {
-        err.message = err.message + 'error email send:';
+        err.message = 'error email send:' + err.message;
         throw err
       });
 
