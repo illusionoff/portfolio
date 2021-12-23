@@ -9,7 +9,6 @@ app.use(express.json({ extended: true }));
 const PORT = config.get('port') || 5000;
 
 app.use('/api/message', require('./routes/routerMessage'));
-// app.use('/', require('./routes/routerIndex'));
 if (process.env.NODE_ENV === 'production') {
   app.use('/', express.static(path.join(__dirname, 'client', 'build')));
 

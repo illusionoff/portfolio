@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const router = Router();
-const quotes = require('../db/services/serviceQuotes');
+const saveBD = require('../db/services/serviceSaveBD');
 const { check, validationResult, body } = require('express-validator'); // body дополнительно взял
 const nodemailer = require("nodemailer");
 const regEmail = require("../mail/message");
@@ -29,8 +29,13 @@ router.post('/',
       .withMessage("Недопустимые символы в строке имени")
       .trim()
       .escape(),
-    check('message', 'Минимальная длина сообщения 10 символов, а максимальная 1000')
+
+    // check('message', 'Минимальная длина сообщения 10 символов, а максимальная 1000')
+    body('message')
       .isLength({ min: 10, max: 1000 })
+      .withMessage("Минимальная длина сообщения 10 символов, а максимальная 1000")
+      .trim()
+      .escape()
   ], async function (req, res) {
     try {
       const errors = validationResult(req);
@@ -46,8 +51,8 @@ router.post('/',
       let { message } = req.body
       console.log('routerMessage name', name);
       console.log('routerMessage name', message);
-      const response = await quotes.getMultiple(name, message);
-      // !!! использовал раньше "res.json(await quotes.getMultiple(name, message))" что вызывало ошибку, потому что уже res дали ответ и пытаюсь получается повторно отсылаю ответ браузеру
+      const response = await saveBD.insertBD(name, message);
+      // !!! использовал раньше "res.json(await quotes.insertBD(name, message))" что вызывало ошибку, потому что уже res дали ответ и пытаюсь получается повторно отсылаю ответ браузеру
       if (!response) {
         return res.status(400).json({ message: 'Что-то пошло не так response' });
       }

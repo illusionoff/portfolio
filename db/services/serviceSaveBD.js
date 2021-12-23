@@ -1,6 +1,6 @@
 const db = require('../db');
 
-async function getMultiple(name, message) {
+async function insertBD(name, message) {
   console.log("serviceQuotes name: ", name);
   console.log("serviceQuotes message: ", message);
   // const data = await db.query(
@@ -36,4 +36,4 @@ async function getMultiple(name, message) {
 
 }
 
-module.exports = { getMultiple };
+module.exports = { insertBD };
