@@ -2,6 +2,7 @@ const { Router } = require('express');
 const router = Router();
 const saveBD = require('../db/services/serviceSaveBD');
 const { check, validationResult, body } = require('express-validator'); // body дополнительно взял
+const { validationName } = require('./validation/validationName');
 const nodemailer = require("nodemailer");
 const regEmail = require("../mail/message");
 const config = require('config');
@@ -12,31 +13,15 @@ const EMAIL1 = config.get('EMAIL_TO')[0];
 const EMAIL2 = config.get('EMAIL_TO')[1];
 
 router.post('/',
-  [
-    body('name')
-      // .notEmpty()
-      // .withMessage("поле пустое")
-      .isLength({ min: 3, max: 30 }) // .isEmpty() работает наоборот если не пусто то вызывает ошибку
-      .withMessage("Вы ввели имя меньше трех символов или более 30 символов")
-      .custom((value) => {
-        // let regexp = /^[a-z0-9_-]{3,16}$/; // проверка
-        // const regexp = /^([а-яё]+|[a-z0-9_-]){3,16}$/; // проверка  на name русские и латинские символы
-        // const regexp = /^([а-яё]+|[a-z0-9_-]){3,30}$/; // проверка  на name русские и латинские символы
-        // const regexp = /^([а-яё]+|[a-zA-Z-9_-]){3,30}$/; // проверка  на name русские и латинские символы
-        const regexp = /^([а-яА-ЯёЁa-zA-Z0-9]){3,30}$/; // проверка  на name русские и латинские символы
-        return regexp.test(value); // возвращает true либо false
-      })
-      .withMessage("Недопустимые символы в строке имени")
-      .trim()
-      .escape(),
+  validationName(),
 
-    // check('message', 'Минимальная длина сообщения 10 символов, а максимальная 1000')
-    body('message')
-      .isLength({ min: 10, max: 1000 })
-      .withMessage("Минимальная длина сообщения 10 символов, а максимальная 1000")
-      .trim()
-      .escape()
-  ], async function (req, res) {
+  // check('message', 'Минимальная длина сообщения 10 символов, а максимальная 1000')
+  body('message')
+    .isLength({ min: 10, max: 1000 })
+    .withMessage("Минимальная длина сообщения 10 символов, а максимальная 1000")
+    .trim()
+    .escape()
+  , async function (req, res) {
     try {
       const errors = validationResult(req);
       if (!errors.isEmpty()) {
