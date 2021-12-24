@@ -3,6 +3,7 @@ const router = Router();
 const saveBD = require('../db/services/serviceSaveBD');
 const { check, validationResult, body } = require('express-validator'); // body дополнительно взял
 const { validationName } = require('./validation/validationName');
+const { validationMessage } = require('./validation/validationMessage');
 const nodemailer = require("nodemailer");
 const regEmail = require("../mail/message");
 const config = require('config');
@@ -14,13 +15,7 @@ const EMAIL2 = config.get('EMAIL_TO')[1];
 
 router.post('/',
   validationName(),
-
-  // check('message', 'Минимальная длина сообщения 10 символов, а максимальная 1000')
-  body('message')
-    .isLength({ min: 10, max: 1000 })
-    .withMessage("Минимальная длина сообщения 10 символов, а максимальная 1000")
-    .trim()
-    .escape()
+  validationMessage()
   , async function (req, res) {
     try {
       const errors = validationResult(req);
