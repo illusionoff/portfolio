@@ -25,6 +25,7 @@
   },
   "configSMS": {
     "token": "",
-    "phone": ""
+    "phone": "",
+    "url": "https://app.sms.by/api/v1/sendQuickSMS"
   }
 }
