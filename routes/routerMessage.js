@@ -4,6 +4,7 @@ const saveBD = require('../db/services/serviceSaveBD');
 const { check, validationResult, body } = require('express-validator'); // body дополнительно взял
 const { validationName } = require('./validation/validationName');
 const { validationMessage } = require('./validation/validationMessage');
+const { validationErrors } = require('./validation/validationErrors');
 const nodemailer = require("nodemailer");
 const regEmail = require("../mail/message");
 const config = require('config');
@@ -15,18 +16,10 @@ const EMAIL2 = config.get('EMAIL_TO')[1];
 
 router.post('/',
   validationName(),
-  validationMessage()
-  , async function (req, res) {
+  validationMessage(),
+  validationErrors,
+  async function (req, res) {
     try {
-      const errors = validationResult(req);
-      if (!errors.isEmpty()) {
-        return res.status(400).json({
-          errors: errors.array(),
-          // message: 'Некорректный данные при регистрации'
-          message: errors.array()[0].msg
-        })
-      }
-
       const { name } = req.body
       let { message } = req.body
       console.log('routerMessage name', name);

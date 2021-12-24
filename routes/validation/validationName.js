@@ -4,7 +4,7 @@ function validationName() {
   return body('name')
     // .notEmpty()
     // .withMessage("поле пустое")
-    .isLength({ min: 3, max: 30 }) // .isEmpty() работает наоборот если не пусто то вызывает ошибку
+    .isLength({ min: 3, max: 10 }) // .isEmpty() работает наоборот если не пусто то вызывает ошибку
     .withMessage("Вы ввели имя меньше трех символов или более 10 символов")
     .custom((value) => {
       // let regexp = /^[a-z0-9_-]{3,16}$/; // проверка
