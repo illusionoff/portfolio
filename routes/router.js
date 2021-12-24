@@ -12,7 +12,7 @@ router.post('/',
   validationMessage(),
   validationErrors,
   saveBDFunc,
-  // sendSMS
+  sendSMS,
   sendEmail
   // ,
   // async function (req, res) {
