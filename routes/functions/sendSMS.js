@@ -1,8 +1,8 @@
 const config = require('config');
-const saveBD = require('../../db/services/serviceSaveBD');
 const fetch = require('node-fetch');
 async function sendSMS(req, res, next) {
-  const { name, message } = req.body
+  const { name } = req.body;
+  let { message } = req.body;
   let nameSMS = name;
   if (nameSMS.length > 10) { nameSMS = name.substring(0, 10) }
   let messageSMS = message;
