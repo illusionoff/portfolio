@@ -13,7 +13,7 @@ async function sendEmail(req, res) {
     const promise1 = transporter.sendMail(regEmail(EMAIL1, name, message));
     const promise2 = transporter.sendMail(regEmail(EMAIL2, name, message));
 
-    await Promise.all([
+    await Promise.all([ //const [promise1data, promise2data] = await Promise.all
       promise1,
       promise2,
     ]).catch(err => {
@@ -23,6 +23,7 @@ async function sendEmail(req, res) {
 
     res.status(201).json({ message: 'Сообщение доставлено' });
   } catch (err) {
+    console.error(`Error sendEmail `, e.message);
     res.status(500).json({ message: 'Что-то пошло не так, попробуйте снова' });
   }
 }
