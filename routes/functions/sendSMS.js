@@ -11,7 +11,8 @@ async function sendSMS(req, res, next) {
     if (message.length > 30) message = message.substring(0, 30)
     console.log('name SMS=', name);
     console.log('message SMS=', message);
-    const urlSMS = `${CONFIGSMS}?token=${TOKEN}&message=name:${encodeURIComponent(name)}:message:${encodeURIComponent(message)}&phone=${PHONE}`; // http://www.mysite.ru/index.php
+    const urlSMS = `${CONFIGSMS}?token=${TOKEN}&message=name:${encodeURIComponent(name)}:message:${encodeURIComponent(message)}&phone=${PHONE}`; // http://www.mysite.ru/index.php\
+    console.log('urlSMS=', urlSMS);
     let responseSMS = await fetch(urlSMS);
     if (!responseSMS.ok) {
       // throw new Error(responseSMS.status); // 404
